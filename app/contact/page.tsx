@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Clock } from "lucide-react"
+import { Mail, MapPin, Clock } from "lucide-react"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -117,9 +117,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-lg">Our Office</h3>
                     <p className="text-muted-foreground">
-                      100 Centennial Avenue
+                      21 Demarest Pl
                       <br />
-                      Piscataway, NJ 08854
+                      Piscataway, NJ 08854, USA
                     </p>
                   </div>
                 </div>
@@ -131,16 +131,6 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-lg">Email Us</h3>
                     <p className="text-muted-foreground">info@alphastats.com</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="bg-primary/10 p-3 rounded-full mr-4">
-                    <Phone className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg">Call Us</h3>
-                    <p className="text-muted-foreground">+1 (609) 555-1234</p>
                   </div>
                 </div>
               </div>
@@ -257,7 +247,7 @@ export default function ContactPage() {
           <h2 className="text-2xl font-bold mb-8">Find Us</h2>
           <div className="rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12090.026747921603!2d-74.46498754999999!3d40.5488627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c65531cfc58f%3A0x71d473c3d7c0b0b5!2sPiscataway%2C%20NJ%2008854!5e0!3m2!1sen!2sus!4v1716841200000!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.8367890122223!2d-74.46498754999999!3d40.5488627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c65531cfc58f%3A0x71d473c3d7c0b0b5!2s21%20Demarest%20Pl%2C%20Piscataway%2C%20NJ%2008854!5e0!3m2!1sen!2sus!4v1716841200000!5m2!1sen!2sus"
               width="100%"
               height="450"
               style={{ border: 0 }}
