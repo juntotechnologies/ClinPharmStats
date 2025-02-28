@@ -117,9 +117,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-lg">Our Office</h3>
                     <p className="text-muted-foreground">
-                      123 Corporate Drive, Suite 200
+                      100 Centennial Avenue
                       <br />
-                      Princeton, NJ 08540
+                      Piscataway, NJ 08854
                     </p>
                   </div>
                 </div>
@@ -257,7 +257,7 @@ export default function ContactPage() {
           <h2 className="text-2xl font-bold mb-8">Find Us</h2>
           <div className="rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24249.96122345098!2d-74.67760242089844!3d40.35098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3e0d086c0a88d%3A0x867bd06f649bc424!2sPrinceton%2C%20NJ%2008540!5e0!3m2!1sen!2sus!4v1653508512432!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12090.026747921603!2d-74.46498754999999!3d40.5488627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c65531cfc58f%3A0x71d473c3d7c0b0b5!2sPiscataway%2C%20NJ%2008854!5e0!3m2!1sen!2sus!4v1716841200000!5m2!1sen!2sus"
               width="100%"
               height="450"
               style={{ border: 0 }}

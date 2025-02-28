@@ -206,45 +206,16 @@ export default function TeamPage() {
 
                     <div>
                       <h3 className="text-xl font-semibold mb-3 relative">
-                        Professional Experience
-                        <div className="w-16 h-1 bg-gradient-blue mt-2"></div>
-                      </h3>
-                      <div className="space-y-4">
-                        <div className="flex flex-col md:flex-row md:gap-4">
-                          <div className="font-semibold text-primary whitespace-nowrap">2021-Present</div>
-                          <div>
-                            <p className="font-medium">Data Analyst/Engineer</p>
-                            <p className="text-muted-foreground">Memorial Sloan Kettering Cancer Center, New York, NY</p>
-                            <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
-                              <li>Engineered data pipelines with SQL-extracted institutional data for surgical outcomes analysis</li>
-                              <li>Developed AI radiology pipeline with fine-tuned Llama3.1 and image segmentation models</li>
-                              <li>Led statistical analyses for landmark studies using advanced methods (GAM, logistic regression, Kaplan-Meier)</li>
-                            </ul>
-                          </div>
-                        </div>
-                        
-                        <div className="flex flex-col md:flex-row md:gap-4">
-                          <div className="font-semibold text-primary whitespace-nowrap">2020-2021</div>
-                          <div>
-                            <p className="font-medium">Bioinformatics Intern</p>
-                            <p className="text-muted-foreground">Sema4, Stamford, CT</p>
-                            <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
-                              <li>Engineered automated pipelines with Bash, Python, WDL, and AWS to detect structural variants</li>
-                              <li>Identified repeat variants in 100+ samples for diabetes therapies research</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div>
-                      <h3 className="text-xl font-semibold mb-3 relative">
-                        Technical Expertise
+                        Background & Expertise
                         <div className="w-16 h-1 bg-gradient-blue mt-2"></div>
                       </h3>
                       <div className="space-y-4">
                         <p>
-                          Shaun brings extensive expertise in data engineering, AI/ML implementation, and statistical analysis to Alpha Stats. His background in biomedical data science enables him to bridge the gap between clinical research and advanced technology solutions.
+                          Shaun brings extensive expertise in data engineering, AI/ML implementation, and statistical analysis to Alpha Stats. With a strong foundation in biomedical data science, he excels at bridging the gap between clinical research and advanced technology solutions.
+                        </p>
+                        
+                        <p>
+                          Since 2021, Shaun has been working at Memorial Sloan Kettering Cancer Center, where he has engineered data pipelines for surgical outcomes analysis, developed AI radiology pipelines with fine-tuned large language models, and led statistical analyses for landmark clinical studies. His experience also includes bioinformatics work at Sema4, where he built automated pipelines for genomic analysis.
                         </p>
                         
                         <p>
@@ -252,7 +223,7 @@ export default function TeamPage() {
                         </p>
                         
                         <p>
-                          Shaun is multilingual, speaking English, Mandarin Chinese, Hindi, Japanese, and Spanish, which enhances his ability to collaborate with international teams and clients.
+                          Shaun is multilingual, speaking English, Mandarin Chinese, Hindi, Japanese, and Spanish, which enhances his ability to collaborate with international teams and clients. His unique combination of technical expertise and healthcare domain knowledge makes him an invaluable asset to Alpha Stats and our clients.
                         </p>
                       </div>
                     </div>
