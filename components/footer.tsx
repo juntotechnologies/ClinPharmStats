@@ -85,7 +85,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col items-center">
                 <Mail className="h-6 w-6 mb-2" />
-                <span>info@alphastats.com</span>
+                <span>info@alphastatsinc.com</span>
               </div>
             </div>
           </div>

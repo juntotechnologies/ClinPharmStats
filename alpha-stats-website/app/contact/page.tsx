@@ -193,7 +193,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-medium text-lg">Email</h3>
-                      <p className="text-muted-foreground">info@alphastats.com</p>
+                      <p className="text-muted-foreground">info@alphastatsinc.com</p>
                     </div>
                   </div>
 

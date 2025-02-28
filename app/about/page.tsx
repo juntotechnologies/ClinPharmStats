@@ -52,8 +52,8 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="absolute -inset-1 bg-primary/20 rounded-lg blur-xl"></div>
                 <Image
-                  src="/placeholder.svg?height=400&width=500"
-                  alt="Alpha Stats Office"
+                  src="/images/alphastats_building.png"
+                  alt="Alpha Stats Headquarters Building"
                   width={500}
                   height={400}
                   className="rounded-lg shadow-lg relative"

@@ -142,11 +142,14 @@ export default function TeamPage() {
                     <div className="bg-white p-2 rounded-lg shadow-lg relative">
                       <div className="aspect-square relative overflow-hidden rounded-md bg-muted">
                         <Image
-                          src="/placeholder.svg"
+                          src="/images/porwal_shaun.png"
                           alt="Shaun Porwal"
                           width={400}
                           height={400}
-                          className="object-cover"
+                          className="object-cover w-full h-full"
+                          style={{ objectFit: 'cover', objectPosition: 'center' }}
+                          sizes="(max-width: 768px) 100vw, 400px"
+                          priority
                         />
                       </div>
                     </div>
