@@ -44,7 +44,7 @@ export default function ContactPage() {
       formSubmitData.append('_template', 'table');
       
       // Send data to FormSubmit using fetch
-      const response = await fetch('https://formsubmit.co/shaun.porwal@gmail.com', {
+      const response = await fetch('https://formsubmit.co/info@alphastatsinc.com', {
         method: 'POST',
         body: formSubmitData
       });

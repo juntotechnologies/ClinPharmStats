@@ -35,11 +35,14 @@ export default function TeamPage() {
                     <div className="bg-white p-2 rounded-lg shadow-lg relative">
                       <div className="aspect-square relative overflow-hidden rounded-md bg-muted">
                         <Image
-                          src="/placeholder.svg"
-                          alt="Vijay Chauhan"
+                          src="/images/chauhan_vijay_fixed.png"
+                          alt="Vijay Chauhan - Data Scientist"
                           width={400}
                           height={400}
-                          className="object-cover"
+                          className="object-cover w-full h-full transition duration-300 ease-in-out hover:scale-110"
+                          style={{ objectFit: 'cover', objectPosition: 'center' }}
+                          sizes="(max-width: 768px) 100vw, 400px"
+                          priority
                         />
                       </div>
                     </div>
@@ -146,7 +149,7 @@ export default function TeamPage() {
                           alt="Shaun Porwal"
                           width={400}
                           height={400}
-                          className="object-cover w-full h-full"
+                          className="object-cover w-full h-full transition duration-300 ease-in-out hover:scale-110"
                           style={{ objectFit: 'cover', objectPosition: 'center' }}
                           sizes="(max-width: 768px) 100vw, 400px"
                           priority

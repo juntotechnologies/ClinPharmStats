@@ -32,13 +32,22 @@ export default function Home() {
             <div className="flex justify-center">
               <div className="relative">
                 <div className="absolute -inset-1 bg-white/20 rounded-lg blur-xl"></div>
-                <Image
-                  src="/placeholder.svg?height=400&width=500"
-                  alt="Biostatistics Services"
-                  width={500}
-                  height={400}
-                  className="rounded-lg shadow-lg relative"
-                />
+                <div className="relative">
+                  <Image
+                    src="/images/cookie.png"
+                    alt="Cookie - Alpha Stats Chief Happiness Officer"
+                    width={500}
+                    height={400}
+                    className="rounded-lg shadow-lg"
+                    priority
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/90 to-primary/60 text-white p-4 rounded-b-lg backdrop-blur-sm">
+                    <div className="text-center">
+                      <h3 className="text-xl font-bold">Cookie</h3>
+                      <p className="text-sm opacity-90">Chief Happiness Officer (CHO)</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -195,12 +204,6 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-3">Innovative Methodology</h3>
               <p className="text-muted-foreground">Advanced statistical designs and analyses</p>
             </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <Button asChild className="bg-gradient-blue hover:opacity-90 transition-opacity">
-              <Link href="/about/why-alpha-stats">Discover More Benefits</Link>
-            </Button>
           </div>
         </div>
       </section>
