@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Mail, Linkedin, FileText } from "lucide-react"
+import { Mail, Linkedin, FileText, Phone } from "lucide-react"
 
 export default function TeamPage() {
   return (
@@ -230,6 +230,87 @@ export default function TeamPage() {
                         
                         <p>
                           Shaun is multilingual, speaking English, Mandarin Chinese, Hindi, Japanese, and Spanish, which enhances his ability to collaborate with international teams and clients. His unique combination of technical expertise and healthcare domain knowledge makes him an invaluable asset to Alpha Stats and our clients.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Gaurav Chauhan */}
+            <div className="mb-20">
+              <div className="flex flex-col md:flex-row gap-8 items-start">
+                <div className="md:w-1/3">
+                  <div className="relative">
+                    <div className="absolute -inset-1 bg-primary/20 rounded-lg blur-xl"></div>
+                    <div className="bg-white p-2 rounded-lg shadow-lg relative">
+                      <div className="aspect-square relative overflow-hidden rounded-md bg-muted flex items-center justify-center">
+                        <div className="text-center p-6">
+                          <p className="text-lg font-medium text-gray-600 mb-2">Gaurav is camera shy</p>
+                          <p className="text-sm text-gray-500">No photo available</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mt-6 flex justify-center gap-4">
+                    <Button variant="outline" size="icon" asChild>
+                      <Link href="tel:9088678669">
+                        <Phone className="h-4 w-4" />
+                        <span className="sr-only">Phone</span>
+                      </Link>
+                    </Button>
+                    <Button variant="outline" size="icon" asChild>
+                      <Link href="mailto:chauhang@gmail.com">
+                        <Mail className="h-4 w-4" />
+                        <span className="sr-only">Email</span>
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="md:w-2/3">
+                  <div className="mb-6">
+                    <h2 className="text-3xl font-bold">Gaurav Chauhan</h2>
+                    <p className="text-xl text-muted-foreground">Senior SAS Programmer</p>
+                  </div>
+
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="text-xl font-semibold mb-3 relative">
+                        Education
+                        <div className="w-16 h-1 bg-gradient-blue mt-2"></div>
+                      </h3>
+                      <div className="space-y-4">
+                        <div className="flex flex-col md:flex-row md:gap-4">
+                          <div>
+                            <p className="font-medium">Bachelor of Science in Computer Information Systems</p>
+                            <p className="text-muted-foreground">NJIT - New Jersey</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-semibold mb-3 relative">
+                        Professional Experience
+                        <div className="w-16 h-1 bg-gradient-blue mt-2"></div>
+                      </h3>
+                      <div className="space-y-4">
+                        <p>
+                          Gaurav is an experienced SAS Programmer with extensive expertise in analysis and reporting of clinical trials data, particularly in oncology and cardiovascular studies. He collaborates with Clinical Scientists, Data Managers, Statisticians, and Medical Writers to deliver high-quality tables, listings, and graphs.
+                        </p>
+                        
+                        <p>
+                          His technical expertise includes SAS/Base, SAS/Macros, SAS/Stat, and SAS/ODS to generate various output formats. Gaurav is proficient in creating CDISC compliant SDTM and ADaM datasets and has a strong understanding of FDA regulations and GCP guidelines.
+                        </p>
+                        
+                        <p>
+                          Prior to rejoining Alpha Stats in 2020, Gaurav worked at Tradecraft Clinical and previously held positions at Celgene Corporation. Throughout his career, he has demonstrated exceptional skills in programming patient profiles, generating and validating tables, listings, and graphs for safety and efficacy data.
+                        </p>
+                        
+                        <p>
+                          As a team player with excellent communication and leadership skills, Gaurav consistently ensures that outputs meet quality standards and project requirements while effectively resolving discrepancies through collaboration with cross-functional teams.
                         </p>
                       </div>
                     </div>
