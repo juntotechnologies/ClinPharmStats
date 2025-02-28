@@ -81,7 +81,7 @@ export default function ContactPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-16 bg-gradient-blue text-white">
+      <section className="relative overflow-hidden py-12 bg-gradient-blue text-white">
         <div className="absolute inset-0 bg-dots-pattern opacity-10"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
@@ -91,7 +91,7 @@ export default function ContactPage() {
         </div>
         <div
           className="absolute bottom-0 left-0 right-0 h-16 bg-white"
-          style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 100%)" }}
+          style={{ clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)" }}
         ></div>
       </section>
 

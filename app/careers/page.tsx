@@ -11,7 +11,7 @@ export default function CareersPage() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold mb-4">Careers at Alpha Stats</h1>
           <p className="text-lg max-w-3xl mx-auto">
-            Join our team of experts in biostatistics, programming, and medical writing
+            Join our team of experts in biostatistics and programming
           </p>
         </div>
       </section>
@@ -66,7 +66,7 @@ export default function CareersPage() {
                 <div className="flex flex-wrap justify-between items-start gap-2">
                   <div>
                     <CardTitle>Senior Biostatistician</CardTitle>
-                    <CardDescription>Full-time | Princeton, NJ (Remote options available)</CardDescription>
+                    <CardDescription>Full-time | Piscataway, NJ (Remote options available)</CardDescription>
                   </div>
                   <Badge>New</Badge>
                 </div>
@@ -89,7 +89,7 @@ export default function CareersPage() {
                     <ul className="list-disc pl-5 space-y-1">
                       <li>PhD or MS in Statistics, Biostatistics, or related field</li>
                       <li>5+ years of experience in pharmaceutical/biotech industry</li>
-                      <li>Proficiency in SAS programming</li>
+                      <li>Proficiency in R or Python programming</li>
                       <li>Knowledge of regulatory requirements</li>
                       <li>Excellent communication skills</li>
                     </ul>
@@ -107,8 +107,8 @@ export default function CareersPage() {
               <CardHeader>
                 <div className="flex flex-wrap justify-between items-start gap-2">
                   <div>
-                    <CardTitle>SAS Programmer</CardTitle>
-                    <CardDescription>Full-time | Princeton, NJ (Remote options available)</CardDescription>
+                    <CardTitle>Python/R Programmer</CardTitle>
+                    <CardDescription>Full-time | Piscataway, NJ (Remote options available)</CardDescription>
                   </div>
                 </div>
               </CardHeader>
@@ -119,7 +119,7 @@ export default function CareersPage() {
                     <ul className="list-disc pl-5 space-y-1">
                       <li>Create SDTM and ADaM datasets</li>
                       <li>Generate tables, listings, and figures (TLFs)</li>
-                      <li>Develop and validate SAS programs</li>
+                      <li>Develop and validate Python/R programs</li>
                       <li>Ensure data quality and integrity</li>
                       <li>Document programming processes</li>
                     </ul>
@@ -129,7 +129,7 @@ export default function CareersPage() {
                     <h3 className="font-semibold mb-2">Requirements:</h3>
                     <ul className="list-disc pl-5 space-y-1">
                       <li>Bachelor's degree in Statistics, Computer Science, or related field</li>
-                      <li>3+ years of SAS programming experience in clinical trials</li>
+                      <li>3+ years of Python or R programming experience in clinical trials</li>
                       <li>Knowledge of CDISC standards (SDTM, ADaM)</li>
                       <li>Experience with statistical analysis and reporting</li>
                       <li>Attention to detail and problem-solving skills</li>
@@ -139,48 +139,7 @@ export default function CareersPage() {
               </CardContent>
               <CardFooter>
                 <Button asChild>
-                  <Link href="/careers/apply?position=sas-programmer">Apply Now</Link>
-                </Button>
-              </CardFooter>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <div className="flex flex-wrap justify-between items-start gap-2">
-                  <div>
-                    <CardTitle>Medical Writer</CardTitle>
-                    <CardDescription>Full-time | Princeton, NJ (Remote options available)</CardDescription>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="font-semibold mb-2">Responsibilities:</h3>
-                    <ul className="list-disc pl-5 space-y-1">
-                      <li>Prepare clinical study protocols and reports</li>
-                      <li>Develop regulatory submission documents</li>
-                      <li>Write manuscripts for publication</li>
-                      <li>Collaborate with cross-functional teams</li>
-                      <li>Ensure compliance with regulatory guidelines</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h3 className="font-semibold mb-2">Requirements:</h3>
-                    <ul className="list-disc pl-5 space-y-1">
-                      <li>Advanced degree in life sciences, pharmacy, or related field</li>
-                      <li>3+ years of medical writing experience in pharmaceutical/biotech industry</li>
-                      <li>Knowledge of ICH/GCP guidelines and regulatory requirements</li>
-                      <li>Strong scientific writing and editing skills</li>
-                      <li>Ability to interpret and communicate complex scientific data</li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-              <CardFooter>
-                <Button asChild>
-                  <Link href="/careers/apply?position=medical-writer">Apply Now</Link>
+                  <Link href="/careers/apply?position=python-r-programmer">Apply Now</Link>
                 </Button>
               </CardFooter>
             </Card>
