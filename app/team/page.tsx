@@ -255,12 +255,6 @@ export default function TeamPage() {
                   </div>
                   <div className="mt-6 flex justify-center gap-4">
                     <Button variant="outline" size="icon" asChild>
-                      <Link href="tel:9088678669">
-                        <Phone className="h-4 w-4" />
-                        <span className="sr-only">Phone</span>
-                      </Link>
-                    </Button>
-                    <Button variant="outline" size="icon" asChild>
                       <Link href="mailto:chauhang@gmail.com">
                         <Mail className="h-4 w-4" />
                         <span className="sr-only">Email</span>

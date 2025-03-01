@@ -17,8 +17,8 @@ export default function Home() {
                 Specialized Biostatistics & Clinical Research Services
               </h1>
               <p className="text-lg mb-8 text-white/90">
-                Alpha Stats Inc is a specialty CRO focused on Phase 1 clinical trials and early drug development,
-                providing expert Biostatistics and cutting-edge Statistical Programming services using R and Python.
+                Expert biostatistics and clinical research services for pharmaceutical companies, 
+                with cutting-edge statistical programming using R and Python.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90">
@@ -122,8 +122,8 @@ export default function Home() {
             </div>
             <div className="prose prose-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
               <p className="mb-4">
-                Alpha Stats Inc is a specialty CRO providing Biostatistics and Statistical Programming services to the
-                pharmaceutical and biotechnology industry. Our focus is on delivering high-quality statistical analysis
+                We provide biostatistics and statistical programming services to the pharmaceutical 
+                and biotechnology industry. Our focus is on delivering high-quality statistical analysis
                 and reporting for clinical trials.
               </p>
               <p className="mb-4">

@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Alpha Stats Inc - Biostatistics & Clinical Research Services",
   description:
-    "Specialty CRO providing Biostatistics, Statistical Programming, and Medical Writing services to the pharmaceutical and biotechnology industry.",
+    "Expert services in biostatistics, statistical programming, and clinical research for pharmaceutical and biotechnology companies.",
     generator: 'v0.dev'
 }
 

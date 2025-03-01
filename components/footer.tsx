@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
-import { Mail, MapPin, Facebook, Twitter, Linkedin, X, Info } from "lucide-react"
+import { Mail, MapPin, X, Info } from "lucide-react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -14,31 +14,8 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-blue text-white">
       <div className="container mx-auto px-4 py-12">
-        {/* Top Section with Logo and Social */}
-        <div className="text-center mb-10">
-          <h3 className="text-2xl font-bold mb-4">Alpha Stats Inc</h3>
-          <p className="mb-6 text-white/90 max-w-xl mx-auto">
-            Specialty CRO providing Biostatistics and Statistical Programming services to the
-            pharmaceutical and biotechnology industry.
-          </p>
-          <div className="flex justify-center space-x-6">
-            <Link href="#" className="hover:text-secondary transition-colors p-2">
-              <Facebook className="h-6 w-6" />
-              <span className="sr-only">Facebook</span>
-            </Link>
-            <Link href="#" className="hover:text-secondary transition-colors p-2">
-              <Twitter className="h-6 w-6" />
-              <span className="sr-only">Twitter</span>
-            </Link>
-            <Link href="#" className="hover:text-secondary transition-colors p-2">
-              <Linkedin className="h-6 w-6" />
-              <span className="sr-only">LinkedIn</span>
-            </Link>
-          </div>
-        </div>
-        
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-white/20 pt-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Quick Links */}
           <div className="text-center">
             <h3 className="text-xl font-bold mb-6">Quick Links</h3>
