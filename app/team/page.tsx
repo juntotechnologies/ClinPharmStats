@@ -13,7 +13,7 @@ export default function TeamPage() {
         <div className="container mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Team</h1>
           <p className="text-xl max-w-3xl mx-auto">
-            Meet the experts behind Alpha Stats' success in biostatistics and clinical research
+            Meet the experts behind ClinPharmStats' success in biostatistics and clinical research
           </p>
         </div>
         <div
@@ -217,7 +217,7 @@ export default function TeamPage() {
                       </h3>
                       <div className="space-y-4">
                         <p>
-                          Shaun brings extensive expertise in data engineering, AI/ML implementation, and statistical analysis to Alpha Stats. With a strong foundation in biomedical data science, he excels at bridging the gap between clinical research and advanced technology solutions.
+                          Shaun brings extensive expertise in data engineering, AI/ML implementation, and statistical analysis to ClinPharmStats. With a strong foundation in biomedical data science, he excels at bridging the gap between clinical research and advanced technology solutions.
                         </p>
                         
                         <p>
@@ -229,7 +229,7 @@ export default function TeamPage() {
                         </p>
                         
                         <p>
-                          Shaun is multilingual, speaking English, Mandarin Chinese, Hindi, Japanese, and Spanish, which enhances his ability to collaborate with international teams and clients. His unique combination of technical expertise and healthcare domain knowledge makes him an invaluable asset to Alpha Stats and our clients.
+                          Shaun is multilingual, speaking English, Mandarin Chinese, Hindi, Japanese, and Spanish, which enhances his ability to collaborate with international teams and clients. His unique combination of technical expertise and healthcare domain knowledge makes him an invaluable asset to ClinPharmStats and our clients.
                         </p>
                       </div>
                     </div>
@@ -300,7 +300,7 @@ export default function TeamPage() {
                         </p>
                         
                         <p>
-                          Prior to rejoining Alpha Stats in 2020, Gaurav worked at Tradecraft Clinical and previously held positions at Celgene Corporation. Throughout his career, he has demonstrated exceptional skills in programming patient profiles, generating and validating tables, listings, and graphs for safety and efficacy data.
+                          Prior to rejoining ClinPharmStats in 2020, Gaurav worked at Tradecraft Clinical and previously held positions at Celgene Corporation. Throughout his career, he has demonstrated exceptional skills in programming patient profiles, generating and validating tables, listings, and graphs for safety and efficacy data.
                         </p>
                         
                         <p>

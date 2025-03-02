@@ -155,7 +155,7 @@ export default function ServicesPage() {
               <div className="max-w-3xl mx-auto bg-white p-10 rounded-lg shadow-xl">
                 <h2 className="text-3xl font-bold mb-4">Need Phase 1 Trial Support?</h2>
                 <p className="text-xl mb-8 text-muted-foreground">
-                  Contact our team today to discuss how Alpha Stats can support your early phase clinical trials.
+                  Contact our team today to discuss how ClinPharmStats can support your early phase clinical trials.
                 </p>
                 <Button asChild size="lg" className="bg-gradient-blue hover:opacity-90 transition-opacity px-8">
                   <Link href="/contact">Contact Us Today</Link>

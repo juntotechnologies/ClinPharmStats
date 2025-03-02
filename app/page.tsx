@@ -35,7 +35,7 @@ export default function Home() {
                 <div className="relative">
                   <Image
                     src="/images/cookie.png"
-                    alt="Cookie - Alpha Stats Chief Happiness Officer"
+                    alt="Cookie - ClinPharmStats Chief Happiness Officer"
                     width={500}
                     height={400}
                     className="rounded-lg shadow-lg"
@@ -117,7 +117,7 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-10">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">About Alpha Stats</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">About ClinPharmStats</h2>
               <div className="w-20 h-1 bg-gradient-blue mx-auto mb-6"></div>
             </div>
             <div className="prose prose-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
@@ -127,8 +127,8 @@ export default function Home() {
                 and reporting for clinical trials.
               </p>
               <p className="mb-4">
-                Alpha Stats is a New Jersey Corporation, previously operating as NJ Biostatistics Inc since 1999. Alpha
-                Stats is headed by a Biostatistician with a PhD having over 25 years of statistical experience.
+                ClinPharmStats is a New Jersey Corporation, previously operating as NJ Biostatistics Inc since 1999. ClinPharmStats
+                is headed by a Biostatistician with a PhD having over 25 years of statistical experience.
               </p>
               <p className="mb-4">
                 We support our clients by way of functional roles on clients projects, both on-site support and via
@@ -157,7 +157,7 @@ export default function Home() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Alpha Stats</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose ClinPharmStats</h2>
             <div className="w-20 h-1 bg-gradient-blue mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               We bring expertise, innovation, and reliability to every project
@@ -242,7 +242,7 @@ export default function Home() {
             </div>
             <h2 className="text-3xl font-bold mb-4">Ready to Work With Us?</h2>
             <p className="text-xl mb-8 text-muted-foreground">
-              Contact our team today to discuss how Alpha Stats can support your clinical research needs.
+              Contact our team today to discuss how ClinPharmStats can support your clinical research needs.
             </p>
             <Button asChild size="lg" className="bg-gradient-blue hover:opacity-90 transition-opacity px-8">
               <Link href="/contact">Contact Us Today</Link>

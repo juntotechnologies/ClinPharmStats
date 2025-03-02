@@ -18,9 +18,9 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-primary flex items-center">
             <div className="w-10 h-10 rounded-full bg-gradient-blue flex items-center justify-center text-white mr-2">
-              A
+              C
             </div>
-            Alpha Stats Inc
+            ClinPharmStats
           </Link>
 
           {/* Mobile menu button */}

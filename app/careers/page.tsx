@@ -9,7 +9,7 @@ export default function CareersPage() {
       {/* Hero Section */}
       <section className="bg-primary/10 py-12">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold mb-4">Careers at Alpha Stats</h1>
+          <h1 className="text-4xl font-bold mb-4">Careers at ClinPharmStats</h1>
           <p className="text-lg max-w-3xl mx-auto">
             Join our team of experts in biostatistics and programming
           </p>
@@ -19,7 +19,7 @@ export default function CareersPage() {
       {/* Why Join Us */}
       <section className="py-12">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">Why Join Alpha Stats?</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">Why Join ClinPharmStats?</h2>
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <Card>
               <CardHeader>

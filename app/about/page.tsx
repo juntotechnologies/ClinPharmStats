@@ -51,7 +51,7 @@ export default function AboutPage() {
       <section className="relative overflow-hidden py-12 bg-gradient-blue text-white">
         <div className="absolute inset-0 bg-dots-pattern opacity-10"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About Alpha Stats</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">About ClinPharmStats</h1>
           <p className="text-xl max-w-3xl mx-auto">
             Providing expert biostatistics and clinical research services since 1999
           </p>
@@ -73,13 +73,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4">
                 <p>
-                  Alpha Stats provides biostatistics and statistical programming services to the
+                  ClinPharmStats provides biostatistics and statistical programming services to the
                   pharmaceutical and biotechnology industry. Our focus is on delivering high-quality statistical
                   analysis and reporting for clinical trials.
                 </p>
                 <p>
-                  Alpha Stats is a New Jersey Corporation, previously operating as NJ Biostatistics Inc since 1999.
-                  Alpha Stats is headed by a Biostatistician with a PhD having over 25 years of statistical experience.
+                  ClinPharmStats is a New Jersey Corporation, previously operating as NJ Biostatistics Inc since 1999.
+                  ClinPharmStats is headed by a Biostatistician with a PhD having over 25 years of statistical experience.
                 </p>
                 <p>
                   We provide comprehensive statistical support for clinical trials, from study design and analysis
@@ -93,7 +93,7 @@ export default function AboutPage() {
                 <div className="absolute -inset-1 bg-primary/20 rounded-lg blur-xl"></div>
                 <Image
                   src="/images/alphastats_building.png"
-                  alt="Alpha Stats Headquarters Building"
+                  alt="ClinPharmStats Headquarters Building"
                   width={500}
                   height={400}
                   className="rounded-lg shadow-lg relative"
@@ -184,7 +184,7 @@ export default function AboutPage() {
                     <Award className="h-10 w-10 text-success" />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-center">Why Alpha Stats</h3>
+                <h3 className="text-xl font-bold mb-3 text-center">Why ClinPharmStats</h3>
                 <p className="text-muted-foreground mb-6 text-center">
                   Find out what sets us apart from other CROs in the industry.
                 </p>
@@ -384,13 +384,13 @@ export default function AboutPage() {
               <h3 className="text-xl font-bold mb-4">Our Mission</h3>
               
               <p className="mb-6">
-                Alpha Stats is committed to its clients for an excellent relationship in partnering work on clinical development and achieving their goals and objectives. Quality is always at the top priority while keeping costs low and timely completion of projects.
+                ClinPharmStats is committed to its clients for an excellent relationship in partnering work on clinical development and achieving their goals and objectives. Quality is always at the top priority while keeping costs low and timely completion of projects.
               </p>
               
               <h3 className="text-xl font-bold mb-4">Our Vision</h3>
               
               <p className="mb-6">
-                Alpha Stats is a specialty CRO for Biostatistics, Statistical Programming, and Medical Writing. In addition, we are planning for undertaking clinical data management projects at our facility in New Jersey.
+                ClinPharmStats is a specialty CRO for Biostatistics, Statistical Programming, and Medical Writing. In addition, we are planning for undertaking clinical data management projects at our facility in New Jersey.
               </p>
               
               <h3 className="text-xl font-bold mb-4">Future Initiatives</h3>
@@ -409,7 +409,7 @@ export default function AboutPage() {
         </div>
       )}
       
-      {/* Expanded Why Alpha Stats Modal */}
+      {/* Expanded Why ClinPharmStats Modal */}
       {isWhyExpanded && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4 overflow-y-auto">
           <div className="bg-white text-gray-800 p-8 rounded-lg shadow-xl max-w-4xl relative max-h-[90vh] overflow-y-auto">
@@ -420,14 +420,14 @@ export default function AboutPage() {
               <X className="h-6 w-6" />
             </button>
             
-            <h2 className="text-3xl font-bold mb-6 text-success">Why Alpha Stats</h2>
+            <h2 className="text-3xl font-bold mb-6 text-success">Why ClinPharmStats</h2>
             <div className="w-20 h-1 bg-gradient-blue mb-8"></div>
             
             <div className="prose prose-lg max-w-none">
               <h3 className="text-xl font-bold mb-4">Cost-Effective Approach</h3>
               
               <p className="mb-6">
-                Alpha Stats is a cost effective CRO committed to high quality and timely completion of clients projects. Alpha Stats is against unnecessary overtime billings and change orders. Since employees in most of the pharmaceutical companies are not paid for overtime, it is unreasonable for CROs to burden clients on account of overtime.
+                ClinPharmStats is a cost effective CRO committed to high quality and timely completion of clients projects. ClinPharmStats is against unnecessary overtime billings and change orders. Since employees in most of the pharmaceutical companies are not paid for overtime, it is unreasonable for CROs to burden clients on account of overtime.
               </p>
               
               <p className="mb-6">
@@ -441,7 +441,7 @@ export default function AboutPage() {
               </p>
               
               <p className="mb-6">
-                In such situation clients do not have much to say because such requests are generally urgent, and eventually clients end up paying CROs exorbitantly. Alpha Stats handles such situations by reprioritizing the tasks and by obtaining sufficient specifications and documentation for execution of such requests. Sufficient specifications are very important in a fast execution of any adhoc analysis.
+                In such situation clients do not have much to say because such requests are generally urgent, and eventually clients end up paying CROs exorbitantly. ClinPharmStats handles such situations by reprioritizing the tasks and by obtaining sufficient specifications and documentation for execution of such requests. Sufficient specifications are very important in a fast execution of any adhoc analysis.
               </p>
               
               <h3 className="text-xl font-bold mb-4">Dedicated Professionals</h3>
@@ -453,11 +453,11 @@ export default function AboutPage() {
               <h3 className="text-xl font-bold mb-4">Client-Focused Resource Selection</h3>
               
               <p className="mb-6">
-                Unlike many CROs, Alpha Stats involves its clients in face to face technical screening and selection of resources for their projects. We have observed that many CROs engage resources with insufficient experience after the award of projects outsourced to them. Alpha Stats identifies resources up front before starting any project and the same resources support the client until completion.
+                Unlike many CROs, ClinPharmStats involves its clients in face to face technical screening and selection of resources for their projects. We have observed that many CROs engage resources with insufficient experience after the award of projects outsourced to them. ClinPharmStats identifies resources up front before starting any project and the same resources support the client until completion.
               </p>
               
               <p className="mb-6">
-                Our resources communicate directly with the client's team in an attempt to be treated as extended team member. Alpha Stats always tries to accommodate within our clients budget.
+                Our resources communicate directly with the client's team in an attempt to be treated as extended team member. ClinPharmStats always tries to accommodate within our clients budget.
               </p>
               
               <div className="text-center mt-8">

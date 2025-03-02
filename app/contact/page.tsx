@@ -71,7 +71,7 @@ function ContactForm() {
       }
       
       // Send data to FormSubmit using fetch
-      const response = await fetch('https://formsubmit.co/info@alphastatsinc.com,shaun.porwal2@gmail.com', {
+      const response = await fetch('https://formsubmit.co/info@clinpharmstats.com,shaun.porwal2@gmail.com', {
         method: 'POST',
         body: formSubmitData
       });
@@ -151,7 +151,7 @@ function ContactForm() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Email Us</h3>
-                    <p className="text-muted-foreground">info@alphastatsinc.com</p>
+                    <p className="text-muted-foreground">info@clinpharmstats.com</p>
                   </div>
                 </div>
               </div>
@@ -305,7 +305,7 @@ function ContactForm() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Alpha Stats Location"
+              title="ClinPharmStats Location"
             ></iframe>
           </div>
         </div>

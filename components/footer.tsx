@@ -62,7 +62,9 @@ export default function Footer() {
               </div>
               <div className="flex flex-col items-center">
                 <Mail className="h-6 w-6 mb-2" />
-                <span>info@alphastatsinc.com</span>
+                <a href="mailto:info@clinpharmstats.com" className="hover:text-secondary transition-colors">
+                  <span>info@clinpharmstats.com</span>
+                </a>
               </div>
             </div>
           </div>
@@ -101,7 +103,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-white/20 mt-10 pt-8 text-center">
-          <p className="text-sm">Copyright © 2010-{currentYear}, Alpha Stats Inc. All rights reserved</p>
+          <p className="text-sm">Copyright © 2010-{currentYear}, ClinPharmStats. All rights reserved</p>
         </div>
       </div>
 
