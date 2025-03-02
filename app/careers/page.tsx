@@ -98,7 +98,7 @@ export default function CareersPage() {
               </CardContent>
               <CardFooter>
                 <Button asChild>
-                  <Link href="/careers/apply?position=senior-biostatistician">Apply Now</Link>
+                  <Link href="/contact?subject=Job Application: Senior Biostatistician#contactForm">Apply Now</Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -139,7 +139,7 @@ export default function CareersPage() {
               </CardContent>
               <CardFooter>
                 <Button asChild>
-                  <Link href="/careers/apply?position=python-r-programmer">Apply Now</Link>
+                  <Link href="/contact?subject=Job Application: Python/R Programmer#contactForm">Apply Now</Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -155,7 +155,7 @@ export default function CareersPage() {
             We're always looking for talented individuals to join our team. Submit your resume for future opportunities.
           </p>
           <Button asChild size="lg">
-            <Link href="/careers/apply">Submit General Application</Link>
+            <Link href="/contact?subject=General Job Application#contactForm">Submit General Application</Link>
           </Button>
         </div>
       </section>

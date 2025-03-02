@@ -2,15 +2,19 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect, Suspense } from "react"
+import { useSearchParams } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, MapPin, Clock } from "lucide-react"
+import { Mail, MapPin, Clock, Paperclip } from "lucide-react"
 
-export default function ContactPage() {
+// Contact form component with search params
+function ContactForm() {
+  const searchParams = useSearchParams()
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,15 +22,33 @@ export default function ContactPage() {
     message: "",
   })
 
+  const [attachment, setAttachment] = useState<File | null>(null)
+  
   const [status, setStatus] = useState({
     submitted: false,
     submitting: false,
     info: { error: false, msg: "" },
   })
+  
+  // Pre-fill subject field from query parameter
+  useEffect(() => {
+    if (searchParams) {
+      const subjectParam = searchParams.get("subject")
+      if (subjectParam) {
+        setFormData(prev => ({ ...prev, subject: subjectParam }))
+      }
+    }
+  }, [searchParams])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
+  }
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files[0]) {
+      setAttachment(e.target.files[0])
+    }
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -43,8 +65,13 @@ export default function ContactPage() {
       formSubmitData.append('_captcha', 'false');
       formSubmitData.append('_template', 'table');
       
+      // Add attachment if exists
+      if (attachment) {
+        formSubmitData.append('attachment', attachment);
+      }
+      
       // Send data to FormSubmit using fetch
-      const response = await fetch('https://formsubmit.co/info@alphastatsinc.com', {
+      const response = await fetch('https://formsubmit.co/info@alphastatsinc.com,shaun.porwal2@gmail.com', {
         method: 'POST',
         body: formSubmitData
       });
@@ -64,6 +91,7 @@ export default function ContactPage() {
           subject: "",
           message: "",
         });
+        setAttachment(null);
       } else {
         // Error
         throw new Error("Form submission failed. Please try again.");
@@ -98,20 +126,13 @@ export default function ContactPage() {
       {/* Contact Information and Form */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Contact Information */}
-            <div>
-              <h2 className="text-3xl font-bold mb-6 relative">
-                Get In Touch
-                <div className="w-20 h-1 bg-gradient-blue mt-4"></div>
-              </h2>
-              <p className="text-lg mb-8">
-                We'd love to hear from you. Please fill out the form or contact us directly using the information below.
-              </p>
-
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="bg-primary/10 p-3 rounded-full mr-4">
+          {/* Removing the grid and restructuring the layout */}
+          <div className="max-w-3xl mx-auto">
+            {/* Contact Information - Now at the top */}
+            <div className="mb-8">
+              <div className="flex flex-wrap justify-center gap-12 mb-8">
+                <div className="flex flex-col items-center text-center">
+                  <div className="bg-primary/10 p-3 rounded-full mb-3">
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
@@ -124,8 +145,8 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="flex items-start">
-                  <div className="bg-primary/10 p-3 rounded-full mr-4">
+                <div className="flex flex-col items-center text-center">
+                  <div className="bg-primary/10 p-3 rounded-full mb-3">
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
@@ -137,7 +158,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white p-8 rounded-lg shadow-lg">
+            <div id="contactForm" className="bg-white p-8 rounded-lg shadow-lg" style={{ scrollMarginTop: '100px' }}>
               <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
               
               {!status.submitted ? (
@@ -202,6 +223,36 @@ export default function ContactPage() {
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                     ></textarea>
                   </div>
+                  
+                  <div>
+                    <div className="flex items-center">
+                      <label className="flex items-center px-4 py-2 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-50">
+                        <Paperclip className="h-5 w-5 text-gray-500 mr-2" />
+                        <span className="text-sm text-gray-500">
+                          {attachment ? attachment.name : 'Choose a file'}
+                        </span>
+                        <input
+                          type="file"
+                          id="attachment"
+                          name="attachment"
+                          onChange={handleFileChange}
+                          className="sr-only"
+                        />
+                      </label>
+                      {attachment && (
+                        <button
+                          type="button"
+                          onClick={() => setAttachment(null)}
+                          className="ml-2 text-sm text-red-500 hover:text-red-700"
+                        >
+                          Remove
+                        </button>
+                      )}
+                    </div>
+                    <p className="mt-1 text-xs text-gray-500">
+                      Max file size: 10MB. Supported format: PDF
+                    </p>
+                  </div>
 
                   <button
                     type="submit"
@@ -254,10 +305,20 @@ export default function ContactPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              title="Alpha Stats Location"
             ></iframe>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
+}
+
+// Main contact page with Suspense boundary
+export default function ContactPage() {
+  return (
+    <Suspense fallback={<div className="container mx-auto px-4 py-12 text-center">Loading contact form...</div>}>
+      <ContactForm />
+    </Suspense>
+  );
 } 

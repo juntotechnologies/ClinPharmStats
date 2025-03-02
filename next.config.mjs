@@ -22,8 +22,8 @@ const nextConfig = {
     parallelServerCompiles: true,
   },
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/alphastatsinc' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/alphastatsinc/' : '',
+  basePath: '',
+  assetPrefix: '',
   trailingSlash: true,
 }
 
