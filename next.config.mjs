@@ -22,8 +22,8 @@ const nextConfig = {
     parallelServerCompiles: true,
   },
   output: 'export',
-  basePath: '',
-  assetPrefix: '',
+  basePath: process.env.GITHUB_PAGES === 'true' ? '/ClinPharmStats' : '',
+  assetPrefix: process.env.GITHUB_PAGES === 'true' ? '/ClinPharmStats/' : '',
   trailingSlash: true,
 }
 

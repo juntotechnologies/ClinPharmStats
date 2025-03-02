@@ -1,6 +1,6 @@
-# Alpha Stats Inc Website
+# ClinPharmStats Website
 
-A corporate website for Alpha Stats Inc built with Next.js and deployed on GitHub Pages.
+A corporate website for clinical pharmacology and statistics consulting services built with Next.js and deployed on GitHub Pages.
 
 ## Development
 

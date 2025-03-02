@@ -27,11 +27,13 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          GITHUB_PAGES: 'true'
 
       - name: Configure for GitHub Pages
         run: |
           touch out/.nojekyll
-          echo "alphastatsinc.com" > out/CNAME
+          echo "clinpharmstats.com" > out/CNAME
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
