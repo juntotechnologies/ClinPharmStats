@@ -62,8 +62,8 @@ export default function Footer() {
               </div>
               <div className="flex flex-col items-center">
                 <Mail className="h-6 w-6 mb-2" />
-                <a href="mailto:info@alphastatsinc.com" className="hover:text-secondary transition-colors">
-                  <span>info@alphastatsinc.com</span>
+                <a href="mailto:shaun.porwal@gmail.com" className="hover:text-secondary transition-colors">
+                  <span>shaun.porwal@gmail.com</span>
                 </a>
               </div>
             </div>
