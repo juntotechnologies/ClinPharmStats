@@ -151,7 +151,7 @@ function ContactForm() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">Email Us</h3>
-                    <p className="text-muted-foreground">info@clinpharmstats.com</p>
+                    <p className="text-muted-foreground">info@alphastatsinc.com</p>
                   </div>
                 </div>
               </div>
