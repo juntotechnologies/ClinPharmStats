@@ -22,8 +22,9 @@ const nextConfig = {
     parallelServerCompiles: true,
   },
   output: 'export',
-  basePath: process.env.GITHUB_PAGES === 'true' ? '/ClinPharmStats' : '',
-  assetPrefix: process.env.GITHUB_PAGES === 'true' ? '/ClinPharmStats/' : '',
+  // When using a custom domain, we don't need basePath and assetPrefix
+  // basePath: process.env.GITHUB_PAGES === 'true' ? '/ClinPharmStats' : '',
+  // assetPrefix: process.env.GITHUB_PAGES === 'true' ? '/ClinPharmStats/' : '',
   trailingSlash: true,
 }
 
