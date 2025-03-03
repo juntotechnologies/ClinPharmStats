@@ -11,7 +11,12 @@ export const metadata: Metadata = {
   title: "ClinPharmStats - Biostatistics & Clinical Research Services",
   description:
     "Expert services in biostatistics, statistical programming, and clinical research for pharmaceutical and biotechnology companies.",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: [
+      { url: '/favicon.svg' },
+    ],
+  }
 }
 
 export default function RootLayout({
@@ -21,6 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.svg" />
+      </head>
       <body className={inter.className}>
         <div className="flex flex-col min-h-screen">
           <Header />
