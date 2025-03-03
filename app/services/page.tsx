@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { BarChart2, FileText, CheckCircle, FlaskRoundIcon as Flask } from "lucide-react"
+import { BarChart2, FileText, CheckCircle, FlaskRound } from "lucide-react"
 
 export default function ServicesPage() {
   return (
@@ -111,8 +111,8 @@ export default function ServicesPage() {
 
             <Card className="card-gradient shadow-lg">
               <CardHeader>
-                <div className="w-16 h-16 rounded-full bg-success/80 flex items-center justify-center mb-4">
-                  <Flask className="h-8 w-8 text-white" />
+                <div className="w-16 h-16 rounded-full bg-gradient-blue flex items-center justify-center mb-4">
+                  <FlaskRound className="h-8 w-8 text-white" />
                 </div>
                 <CardTitle className="text-2xl">Early Drug Development</CardTitle>
                 <CardDescription>Comprehensive early phase support</CardDescription>
@@ -120,27 +120,27 @@ export default function ServicesPage() {
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-success mr-2 mt-0.5 shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 shrink-0" />
                     <span>First-in-human study design</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-success mr-2 mt-0.5 shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 shrink-0" />
                     <span>Dose escalation strategies</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-success mr-2 mt-0.5 shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 shrink-0" />
                     <span>PK/PD modeling support</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-success mr-2 mt-0.5 shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 shrink-0" />
                     <span>Safety analysis expertise</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-success mr-2 mt-0.5 shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 shrink-0" />
                     <span>Regulatory submission support</span>
                   </li>
                   <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-success mr-2 mt-0.5 shrink-0" />
+                    <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 shrink-0" />
                     <span>IND submission assistance</span>
                   </li>
                 </ul>
