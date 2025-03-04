@@ -49,7 +49,7 @@ export default function TeamPage() {
                   </div>
                   <div className="mt-6 flex justify-center gap-4">
                     <Button variant="outline" size="icon" asChild>
-                      <Link href="mailto:vijay@alphastats.com">
+                      <Link href="mailto:shaun.porwal@gmail.com">
                         <Mail className="h-4 w-4" />
                         <span className="sr-only">Email</span>
                       </Link>

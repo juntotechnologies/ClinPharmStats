@@ -71,7 +71,7 @@ function ContactForm() {
       }
       
       // Send data to FormSubmit using fetch
-      const response = await fetch('https://formsubmit.co/ajax/shaun.porwal@gmail.com,vijay@alphastatsinc.com', {
+      const response = await fetch('https://formsubmit.co/ajax/shaun.porwal@gmail.com', {
         method: 'POST',
         body: formSubmitData
       });
