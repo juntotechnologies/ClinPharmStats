@@ -99,14 +99,14 @@ def update_tsx_file(publications):
     highlight_replacement = """const highlightAuthor = (authors: string) => {
     // Replace variations of Shaun Porwal with bold version
     return authors
-      .replace(/SP Porwal/gi, "<strong>SP PORWAL</strong>")
-      .replace(/S Porwal/gi, "<strong>S PORWAL</strong>")
-      .replace(/Shaun P Porwal/gi, "<strong>SHAUN P PORWAL</strong>")
-      .replace(/Shaun Porwal/gi, "<strong>SHAUN PORWAL</strong>")
-      .replace(/Porwal S/gi, "<strong>PORWAL S</strong>")
-      .replace(/Porwal SP/gi, "<strong>PORWAL SP</strong>")
-      .replace(/Porwal, S/gi, "<strong>PORWAL, S</strong>")
-      .replace(/Porwal, SP/gi, "<strong>PORWAL, SP</strong>");
+      .replace(/SP Porwal/gi, "<strong>SP Porwal</strong>")
+      .replace(/S Porwal/gi, "<strong>S Porwal</strong>")
+      .replace(/Shaun P Porwal/gi, "<strong>Shaun P Porwal</strong>")
+      .replace(/Shaun Porwal/gi, "<strong>Shaun Porwal</strong>")
+      .replace(/Porwal S/gi, "<strong>Porwal S</strong>")
+      .replace(/Porwal SP/gi, "<strong>Porwal SP</strong>")
+      .replace(/Porwal, S/gi, "<strong>Porwal, S</strong>")
+      .replace(/Porwal, SP/gi, "<strong>Porwal, SP</strong>");
   };"""
     
     new_content = re.sub(pattern, replacement, content)
