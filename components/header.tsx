@@ -45,6 +45,10 @@ export default function Header() {
               SERVICES
             </Link>
 
+            <Link href="/scholarship" className="font-medium hover:text-primary transition-colors">
+              SCHOLARSHIP
+            </Link>
+
             <Link href="/careers" className="font-medium hover:text-primary transition-colors">
               CAREERS
             </Link>
@@ -59,47 +63,64 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 space-y-4">
-            <Link href="/" className="block py-2 font-medium hover:text-primary" onClick={() => setIsMenuOpen(false)}>
-              HOME
-            </Link>
-
-            <Link
-              href="/about"
-              className="block py-2 font-medium hover:text-primary"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              ABOUT US
-            </Link>
-
-            <Link
-              href="/team"
-              className="block py-2 font-medium hover:text-primary"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              TEAM
-            </Link>
-
-            <Link
-              href="/services"
-              className="block py-2 font-medium hover:text-primary"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              SERVICES
-            </Link>
-
-            <Link
-              href="/careers"
-              className="block py-2 font-medium hover:text-primary"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              CAREERS
-            </Link>
-
-            <Link href="/contact" className="block py-2 font-medium text-primary" onClick={() => setIsMenuOpen(false)}>
-              CONTACT US
-            </Link>
-          </nav>
+          <div
+            className={`fixed inset-0 bg-white z-50 md:hidden transition-transform duration-300 ease-in-out ${
+              isMenuOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+          >
+            <div className="flex justify-end p-4">
+              <Button variant="ghost" size="icon" onClick={toggleMenu}>
+                <X className="h-6 w-6" />
+              </Button>
+            </div>
+            <nav className="flex flex-col items-center space-y-6 p-4">
+              <Link
+                href="/"
+                className="text-xl font-medium hover:text-primary transition-colors"
+                onClick={toggleMenu}
+              >
+                HOME
+              </Link>
+              <Link
+                href="/about"
+                className="text-xl font-medium hover:text-primary transition-colors"
+                onClick={toggleMenu}
+              >
+                ABOUT US
+              </Link>
+              <Link
+                href="/team"
+                className="text-xl font-medium hover:text-primary transition-colors"
+                onClick={toggleMenu}
+              >
+                TEAM
+              </Link>
+              <Link
+                href="/services"
+                className="text-xl font-medium hover:text-primary transition-colors"
+                onClick={toggleMenu}
+              >
+                SERVICES
+              </Link>
+              <Link
+                href="/scholarship"
+                className="text-xl font-medium hover:text-primary transition-colors"
+                onClick={toggleMenu}
+              >
+                SCHOLARSHIP
+              </Link>
+              <Link
+                href="/careers"
+                className="text-xl font-medium hover:text-primary transition-colors"
+                onClick={toggleMenu}
+              >
+                CAREERS
+              </Link>
+              <Link href="/contact" className="text-xl font-medium text-primary" onClick={() => setIsMenuOpen(false)}>
+                CONTACT US
+              </Link>
+            </nav>
+          </div>
         )}
       </div>
     </header>
