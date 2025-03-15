@@ -11,6 +11,8 @@ from scholarly import scholarly
 
 # Google Scholar ID
 SCHOLAR_ID = "eR7hro0AAAAJ"
+# Your name variations to look for in author lists
+YOUR_NAME_VARIATIONS = ["Porwal, S", "Porwal, SP", "Porwal, Shaun", "Porwal S", "Porwal SP", "S Porwal", "SP Porwal", "Shaun Porwal"]
 
 def fetch_publications():
     """Fetch publications from Google Scholar."""
@@ -92,7 +94,23 @@ def update_tsx_file(publications):
     pattern = r'const publications: Publication\[\] = \[([\s\S]*?)\];'
     replacement = f'const publications: Publication[] = [\n{publications_str}\n  ];'
     
+    # Update the highlightAuthor function to include all name variations
+    highlight_pattern = r'const highlightAuthor = \(authors: string\) => \{[\s\S]*?return authors([\s\S]*?);\s*\};'
+    highlight_replacement = """const highlightAuthor = (authors: string) => {
+    // Replace variations of Shaun Porwal with bold version
+    return authors
+      .replace(/SP Porwal/gi, "<strong>SP PORWAL</strong>")
+      .replace(/S Porwal/gi, "<strong>S PORWAL</strong>")
+      .replace(/Shaun P Porwal/gi, "<strong>SHAUN P PORWAL</strong>")
+      .replace(/Shaun Porwal/gi, "<strong>SHAUN PORWAL</strong>")
+      .replace(/Porwal S/gi, "<strong>PORWAL S</strong>")
+      .replace(/Porwal SP/gi, "<strong>PORWAL SP</strong>")
+      .replace(/Porwal, S/gi, "<strong>PORWAL, S</strong>")
+      .replace(/Porwal, SP/gi, "<strong>PORWAL, SP</strong>");
+  };"""
+    
     new_content = re.sub(pattern, replacement, content)
+    new_content = re.sub(highlight_pattern, highlight_replacement, new_content)
     
     # Write the updated content back to the file
     with open(file_path, 'w') as file:
