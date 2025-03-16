@@ -78,10 +78,15 @@ def update_tsx_file(publications):
     # Convert publications to TypeScript format
     publications_ts = []
     for pub in publications:
+        # Escape double quotes in strings
+        title_escaped = pub['title'].replace('"', r'\"')
+        authors_escaped = pub['authors'].replace('"', r'\"')
+        journal_escaped = pub['journal'].replace('"', r'\"')
+        
         pub_ts = f"""    {{
-      title: "{pub['title'].replace('"', '\\"')}",
-      authors: "{pub['authors'].replace('"', '\\"')}",
-      journal: "{pub['journal'].replace('"', '\\"')}",
+      title: "{title_escaped}",
+      authors: "{authors_escaped}",
+      journal: "{journal_escaped}",
       year: {pub['year']},
       citations: {pub['citations']},
       url: "{pub['url']}"
