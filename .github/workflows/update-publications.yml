@@ -28,10 +28,14 @@ jobs:
       - name: Update publications from Google Scholar
         run: |
           python .github/scripts/update_publications.py
+          
+      - name: Update Vijay Chauhan's publication citations from PubMed
+        run: |
+          python .github/scripts/update_vijay_citations.py
         
       - name: Commit and push if changed
         run: |
           git config --global user.name 'GitHub Actions Bot'
           git config --global user.email 'actions@github.com'
           git add app/scholarship/page.tsx
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update: Publications from Google Scholar" && git push) 
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update: Publications from Google Scholar and PubMed" && git push) 
