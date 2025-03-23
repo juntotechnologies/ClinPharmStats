@@ -1,11 +1,11 @@
-import Link from "next/link"
+import { Award, BookOpen, ExternalLink } from "lucide-react"
 import { Metadata } from "next"
+import Link from "next/link"
 import "./page.css"
-import { ExternalLink, BookOpen, Award } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Scholarship | ClinPharmStats",
-  description: "Academic publications and research contributions by Shaun Porwal, Vijay Chauhan, and the ClinPharmStats team in biostatistics and clinical research.",
+  description: "Publications and research contributions by Shaun Porwal, Vijay Chauhan, and the ClinPharmStats team in biostatistics and clinical research.",
   keywords: ["publications", "research", "academic papers", "biostatistics research", "clinical trials publications"],
   openGraph: {
     title: "Academic Publications | ClinPharmStats",
@@ -211,7 +211,7 @@ export default function ScholarshipPage() {
       <section className="relative overflow-hidden py-12 bg-gradient-blue text-white">
         <div className="absolute inset-0 bg-dots-pattern opacity-10"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Academic Publications</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Clinical Research Contributions</h1>
           <p className="text-xl max-w-3xl mx-auto">
             Research contributions and scholarly work in biostatistics, clinical research, and data science
           </p>
@@ -227,12 +227,12 @@ export default function ScholarshipPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="mb-12 text-center">
-              <h2 className="text-3xl font-bold mb-4">Shaun Porwal's Research Publications</h2>
+              <h2 className="text-3xl font-bold mb-4">Shaun Porwal's Research Contributions</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 Peer-reviewed publications in medical journals and conference proceedings
               </p>
               <div className="flex justify-center mt-6">
-                <Link 
+                <Link
                   href="https://scholar.google.com/citations?hl=en&user=eR7hro0AAAAJ"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -247,8 +247,8 @@ export default function ScholarshipPage() {
 
             <div className="grid grid-cols-1 gap-6">
               {publications.map((pub, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="publication-card bg-white rounded-lg shadow-md overflow-hidden"
                 >
                   <div className="p-6">
@@ -263,8 +263,8 @@ export default function ScholarshipPage() {
                             pub.title
                           )}
                         </h3>
-                        <p 
-                          className="publication-authors text-gray-700 mb-2" 
+                        <p
+                          className="publication-authors text-gray-700 mb-2"
                           dangerouslySetInnerHTML={{ __html: highlightAuthor(pub.authors) }}
                         />
                         <p className="text-gray-600 italic mb-4">{pub.journal}</p>
@@ -283,9 +283,9 @@ export default function ScholarshipPage() {
                     </div>
                     {pub.url && (
                       <div className="mt-4 flex justify-end">
-                        <Link 
-                          href={pub.url} 
-                          target="_blank" 
+                        <Link
+                          href={pub.url}
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="text-sm text-primary hover:text-primary/80 inline-flex items-center"
                         >
@@ -302,7 +302,7 @@ export default function ScholarshipPage() {
             <div className="mt-12 text-center">
               <p className="text-gray-600">
                 For a complete list of publications and citation metrics, please visit my{" "}
-                <Link 
+                <Link
                   href="https://scholar.google.com/citations?hl=en&user=eR7hro0AAAAJ"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -321,7 +321,7 @@ export default function ScholarshipPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="mb-12 text-center">
-              <h2 className="text-3xl font-bold mb-4">Vijay Chauhan's Research Publications</h2>
+              <h2 className="text-3xl font-bold mb-4">Vijay Chauhan's Research Contributions</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 Peer-reviewed publications, conference papers, and research contributions
               </p>
@@ -329,8 +329,8 @@ export default function ScholarshipPage() {
 
             <div className="grid grid-cols-1 gap-6">
               {vijayPublications.map((pub, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="publication-card bg-white rounded-lg shadow-md overflow-hidden"
                 >
                   <div className="p-6">
@@ -345,8 +345,8 @@ export default function ScholarshipPage() {
                             pub.title
                           )}
                         </h3>
-                        <p 
-                          className="publication-authors text-gray-700 mb-2" 
+                        <p
+                          className="publication-authors text-gray-700 mb-2"
                           dangerouslySetInnerHTML={{ __html: highlightVijay(pub.authors) }}
                         />
                         <p className="text-gray-600 italic mb-4">
@@ -376,9 +376,9 @@ export default function ScholarshipPage() {
                     </div>
                     {pub.url && (
                       <div className="mt-4 flex justify-end">
-                        <Link 
-                          href={pub.url} 
-                          target="_blank" 
+                        <Link
+                          href={pub.url}
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="text-sm text-primary hover:text-primary/80 inline-flex items-center"
                         >
@@ -396,4 +396,4 @@ export default function ScholarshipPage() {
       </section>
     </div>
   )
-} 
+}
