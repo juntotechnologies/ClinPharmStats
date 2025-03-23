@@ -37,10 +37,6 @@ export default function Header() {
               ABOUT US
             </Link>
 
-            <Link href="/team" className="font-medium hover:text-primary transition-colors">
-              TEAM
-            </Link>
-
             <Link href="/services" className="font-medium hover:text-primary transition-colors">
               SERVICES
             </Link>
@@ -87,13 +83,6 @@ export default function Header() {
                 onClick={toggleMenu}
               >
                 ABOUT US
-              </Link>
-              <Link
-                href="/team"
-                className="text-xl font-medium hover:text-primary transition-colors"
-                onClick={toggleMenu}
-              >
-                TEAM
               </Link>
               <Link
                 href="/services"

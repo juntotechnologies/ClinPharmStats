@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ChevronRight, Users, FileText, Award, Target, X } from "lucide-react"
+import { ChevronRight, Users, FileText, Award, Target, X, Mail, Linkedin, Phone } from "lucide-react"
 
 export default function AboutPage() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -102,19 +102,317 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="mb-16 py-12 px-8 bg-secondary rounded-lg relative overflow-hidden">
-            <div className="absolute inset-0 bg-dots-pattern opacity-20"></div>
-            <div className="relative z-10">
-              <h2 className="text-3xl font-bold mb-6 text-center">Our Expertise</h2>
-              <div className="w-20 h-1 bg-gradient-blue mx-auto mb-8"></div>
-              <p className="text-lg text-center max-w-3xl mx-auto mb-6">
-                We meet all criteria mandated by the GCP, ICH and FDA guidelines. Our professionals work closely with
-                clients Biostatisticians, Statistical Programmers, Data Management team, Clinicians, Medical Writers,
-                and Regulatory Affairs.
-              </p>
-              <p className="text-lg text-center max-w-3xl mx-auto">
-                Mathematical and computer methodology is developed for innovative statistical designs and analyses.
-              </p>
+          {/* Team Members Section (Replacing Our Expertise) */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold mb-6 text-center">Our Team</h2>
+            <div className="w-20 h-1 bg-gradient-blue mx-auto mb-12"></div>
+
+            {/* Vijay Chauhan */}
+            <div className="mb-16">
+              <div className="flex flex-col md:flex-row gap-8 items-start">
+                <div className="md:w-1/3">
+                  <div className="relative">
+                    <div className="absolute -inset-1 bg-primary/20 rounded-lg blur-xl"></div>
+                    <div className="bg-white p-2 rounded-lg shadow-lg relative">
+                      <div className="aspect-square relative overflow-hidden rounded-md bg-muted">
+                        <Image
+                          src="/images/chauhan_vijay_fixed.png"
+                          alt="Vijay Chauhan - Data Scientist"
+                          width={400}
+                          height={400}
+                          className="object-cover w-full h-full transition duration-300 ease-in-out hover:scale-110"
+                          style={{ objectFit: 'cover', objectPosition: 'center' }}
+                          sizes="(max-width: 768px) 100vw, 400px"
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mt-6 flex justify-center gap-4">
+                    <Button variant="outline" size="icon" asChild>
+                      <Link href="mailto:shaun.porwal@gmail.com">
+                        <Mail className="h-4 w-4" />
+                        <span className="sr-only">Email</span>
+                      </Link>
+                    </Button>
+                    <Button variant="outline" size="icon" asChild>
+                      <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <Linkedin className="h-4 w-4" />
+                        <span className="sr-only">LinkedIn</span>
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="md:w-2/3">
+                  <div className="mb-6">
+                    <h2 className="text-3xl font-bold">Vijay Chauhan, Ph.D.</h2>
+                    <p className="text-xl text-muted-foreground">President & CEO</p>
+                  </div>
+
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="text-xl font-semibold mb-3 relative">
+                        Education
+                        <div className="w-16 h-1 bg-gradient-blue mt-2"></div>
+                      </h3>
+                      <div className="space-y-4">
+                        <div className="flex flex-col md:flex-row md:gap-4">
+                          <div className="font-semibold text-primary whitespace-nowrap">1989-1990</div>
+                          <div>
+                            <p className="font-medium">Postdoctoral Fellow - Estimation of variance components</p>
+                            <p className="text-muted-foreground">McGill University, Montreal, Canada</p>
+                          </div>
+                        </div>
+                        
+                        <div className="flex flex-col md:flex-row md:gap-4">
+                          <div className="font-semibold text-primary whitespace-nowrap">1986-1987</div>
+                          <div>
+                            <p className="font-medium">Postdoctoral Fellow - Statistical modeling using mixed models</p>
+                            <p className="text-muted-foreground">Swiss Federal Institute of Technology, Zurich, Switzerland</p>
+                          </div>
+                        </div>
+                        
+                        <div className="flex flex-col md:flex-row md:gap-4">
+                          <div className="font-semibold text-primary whitespace-nowrap">1982-1985</div>
+                          <div>
+                            <p className="font-medium">Ph.D.(Statistics) - Mixed Model Methods</p>
+                            <p className="text-muted-foreground">Edinburgh University, Scotland</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-semibold mb-3 relative">
+                        Biostatistics & SAS Experience
+                        <div className="w-16 h-1 bg-gradient-blue mt-2"></div>
+                      </h3>
+                      <div className="space-y-4">
+                        <p>
+                          PhD in Statistics with specialization in mixed models methodology for prediction of fixed and random effects, 
+                          and in estimating variance components. Over 25 years of statistical experience including 13 years in the 
+                          pharmaceutical and biotech companies and CROs.
+                        </p>
+                        
+                        <p>
+                          Responsibilities in various assignments in the pharmaceutical industry included protocol development, 
+                          writing Statistical Analysis Plans and programming specifications, supporting IDMC, DSMB and drug development 
+                          advisory boards in evaluation and interpretation of clinical trial results and formulating recommendations, 
+                          integrated summary of efficacy and safety, CRFs review, contributing to writing of clinical study reports 
+                          and pre-NDA briefing packages, direct interactions with FDA reviewers and responding to FDA queries, 
+                          assisting Regulatory Affairs in drafting letters of responses to FDA.
+                        </p>
+                        
+                        <p>
+                          Therapeutic areas of experience include cardiovascular, hypertension, diabetes, oncology, Mesothelioma trials, 
+                          Dermatology (Acne Vulgaris), CNS (Bipolar I Disorder and Schizophrenia), weight loss, anti-fungal, pain studies, 
+                          diagnostic imaging, anti-infective (complicated skin structure infections, complicated intra-abdominal infection), 
+                          postmenopausal management and contraceptive studies.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Shaun Porwal */}
+            <div className="mb-16">
+              <div className="flex flex-col md:flex-row gap-8 items-start">
+                <div className="md:w-1/3">
+                  <div className="relative">
+                    <div className="absolute -inset-1 bg-primary/20 rounded-lg blur-xl"></div>
+                    <div className="bg-white p-2 rounded-lg shadow-lg relative">
+                      <div className="aspect-square relative overflow-hidden rounded-md bg-muted">
+                        <Image
+                          src="/images/porwal_shaun.png"
+                          alt="Shaun Porwal"
+                          width={400}
+                          height={400}
+                          className="object-cover w-full h-full transition duration-300 ease-in-out hover:scale-110"
+                          style={{ objectFit: 'cover', objectPosition: 'center' }}
+                          sizes="(max-width: 768px) 100vw, 400px"
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mt-6 flex justify-center gap-4">
+                    <Button variant="outline" size="icon" asChild>
+                      <Link href="mailto:shaun.porwal@gmail.com">
+                        <Mail className="h-4 w-4" />
+                        <span className="sr-only">Email</span>
+                      </Link>
+                    </Button>
+                    <Button variant="outline" size="icon" asChild>
+                      <Link href="https://linkedin.com/in/shaunporwal" target="_blank" rel="noopener noreferrer">
+                        <Linkedin className="h-4 w-4" />
+                        <span className="sr-only">LinkedIn</span>
+                      </Link>
+                    </Button>
+                    <Button variant="outline" size="icon" asChild>
+                      <Link href="https://shaunporwal.com" target="_blank" rel="noopener noreferrer">
+                        <FileText className="h-4 w-4" />
+                        <span className="sr-only">Website</span>
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="md:w-2/3">
+                  <div className="mb-6">
+                    <h2 className="text-3xl font-bold">Shaun Porwal</h2>
+                    <p className="text-xl text-muted-foreground">Chief Technology Officer</p>
+                  </div>
+
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="text-xl font-semibold mb-3 relative">
+                        Education
+                        <div className="w-16 h-1 bg-gradient-blue mt-2"></div>
+                      </h3>
+                      <div className="space-y-4">
+                        <div className="flex flex-col md:flex-row md:gap-4">
+                          <div className="font-semibold text-primary whitespace-nowrap">2021</div>
+                          <div>
+                            <p className="font-medium">Master's in Biomedical Data Science (MS)</p>
+                            <p className="text-muted-foreground">Icahn School of Medicine at Mount Sinai</p>
+                          </div>
+                        </div>
+                        
+                        <div className="flex flex-col md:flex-row md:gap-4">
+                          <div className="font-semibold text-primary whitespace-nowrap">2019</div>
+                          <div>
+                            <p className="font-medium">Bachelor's in Biomedical Engineering, Chinese (BE)</p>
+                            <p className="text-muted-foreground">Rutgers University - New Brunswick</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-semibold mb-3 relative">
+                        Background & Expertise
+                        <div className="w-16 h-1 bg-gradient-blue mt-2"></div>
+                      </h3>
+                      <div className="space-y-4">
+                        <p>
+                          Shaun brings extensive expertise in data engineering, AI/ML implementation, and statistical analysis to ClinPharmStats. With a strong foundation in biomedical data science, he excels at bridging the gap between clinical research and advanced technology solutions.
+                        </p>
+                        
+                        <p>
+                          Since 2021, Shaun has been working at Memorial Sloan Kettering Cancer Center, where he has engineered data pipelines for surgical outcomes analysis, developed AI radiology pipelines with fine-tuned large language models, and led statistical analyses for landmark clinical studies. His experience also includes bioinformatics work at Sema4, where he built automated pipelines for genomic analysis.
+                        </p>
+                        
+                        <p>
+                          He has developed several open-source tools including the widely-used <a href="https://decisioncurveanalysis.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">dcurves</a> Python library (27k+ downloads) for evaluating binary and survival models, and enterprise solutions like no-more-sql, a fine-tuned Llama + RAG pipeline for secure text-to-SQL conversion.
+                        </p>
+                        
+                        <p>
+                          Shaun is multilingual, speaking English, Mandarin Chinese, Hindi, Japanese, and Spanish, which enhances his ability to collaborate with international teams and clients. His unique combination of technical expertise and healthcare domain knowledge makes him an invaluable asset to ClinPharmStats and our clients.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Gaurav Chauhan */}
+            <div className="mb-16">
+              <div className="flex flex-col md:flex-row gap-8 items-start">
+                <div className="md:w-1/3">
+                  <div className="relative">
+                    <div className="absolute -inset-1 bg-primary/20 rounded-lg blur-xl"></div>
+                    <div className="bg-white p-2 rounded-lg shadow-lg relative">
+                      <div className="aspect-square relative overflow-hidden rounded-md bg-muted flex items-center justify-center">
+                        <div className="text-center p-6">
+                          <p className="text-lg font-medium text-gray-600 mb-2">Gaurav is camera shy</p>
+                          <p className="text-sm text-gray-500">A professional headshot will be added soon</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mt-6 flex justify-center gap-4">
+                    <Button variant="outline" size="icon" asChild>
+                      <Link href="mailto:gaurav@clinpharmstats.com">
+                        <Mail className="h-4 w-4" />
+                        <span className="sr-only">Email</span>
+                      </Link>
+                    </Button>
+                    <Button variant="outline" size="icon" asChild>
+                      <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <Linkedin className="h-4 w-4" />
+                        <span className="sr-only">LinkedIn</span>
+                      </Link>
+                    </Button>
+                    <Button variant="outline" size="icon" asChild>
+                      <Link href="tel:+12015551234">
+                        <Phone className="h-4 w-4" />
+                        <span className="sr-only">Phone</span>
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="md:w-2/3">
+                  <div className="mb-6">
+                    <h2 className="text-3xl font-bold">Gaurav Chauhan</h2>
+                    <p className="text-xl text-muted-foreground">Director of Operations</p>
+                  </div>
+
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="text-xl font-semibold mb-3 relative">
+                        Education
+                        <div className="w-16 h-1 bg-gradient-blue mt-2"></div>
+                      </h3>
+                      <div className="space-y-4">
+                        <div className="flex flex-col md:flex-row md:gap-4">
+                          <div className="font-semibold text-primary whitespace-nowrap">2008</div>
+                          <div>
+                            <p className="font-medium">Master's in Project Management (MPM)</p>
+                            <p className="text-muted-foreground">Keller Graduate School of Management</p>
+                          </div>
+                        </div>
+                        
+                        <div className="flex flex-col md:flex-row md:gap-4">
+                          <div className="font-semibold text-primary whitespace-nowrap">2006</div>
+                          <div>
+                            <p className="font-medium">Bachelor's in Business Administration (BBA)</p>
+                            <p className="text-muted-foreground">DeVry University</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-semibold mb-3 relative">
+                        Operations Experience
+                        <div className="w-16 h-1 bg-gradient-blue mt-2"></div>
+                      </h3>
+                      <div className="space-y-4">
+                        <p>
+                          Gaurav has over 15 years of experience in operations management within the pharmaceutical and healthcare industries. He specializes in optimizing project workflows, resource allocation, and process improvement.
+                        </p>
+                        
+                        <p>
+                          At ClinPharmStats, Gaurav oversees day-to-day operations, ensures project timelines and deliverables are met, and coordinates between statistical teams and clients. His expertise in project management methodologies has been instrumental in streamlining our service delivery and enhancing client satisfaction.
+                        </p>
+                        
+                        <p>
+                          Prior to joining ClinPharmStats, Gaurav held operations roles at leading CROs where he managed cross-functional teams and implemented process improvements that significantly reduced project timelines while maintaining quality standards.
+                        </p>
+                        
+                        <p>
+                          His combination of business acumen and understanding of the clinical research landscape makes him an essential part of our leadership team, ensuring that our statistical expertise is delivered through efficient operational frameworks.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
