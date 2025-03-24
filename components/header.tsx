@@ -17,18 +17,18 @@ export default function Header() {
     <header className="border-b shadow-sm bg-white sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-primary flex items-center">
+          <Link href="/" className="text-2xl font-bold text-primary flex items-center shrink-0">
             <Image src="/logo.svg" alt="ClinPharmStats Logo" width={40} height={40} className="mr-2" />
             ClinPharmStats
           </Link>
 
           {/* Mobile menu button */}
-          <Button variant="ghost" size="icon" className="md:hidden" onClick={toggleMenu}>
+          <Button variant="ghost" size="icon" className="lg:hidden" onClick={toggleMenu}>
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-4 xl:space-x-8">
             <Link href="/" className="font-medium hover:text-primary transition-colors">
               HOME
             </Link>
@@ -43,6 +43,10 @@ export default function Header() {
 
             <Link href="/scholarship" className="font-medium hover:text-primary transition-colors">
               SCHOLARSHIP
+            </Link>
+
+            <Link href="/open-source" className="font-medium hover:text-primary transition-colors">
+              OPEN SOURCE
             </Link>
 
             <Link href="/careers" className="font-medium hover:text-primary transition-colors">
@@ -60,7 +64,7 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div
-            className={`fixed inset-0 bg-white z-50 md:hidden transition-transform duration-300 ease-in-out ${
+            className={`fixed inset-0 bg-white z-50 lg:hidden transition-transform duration-300 ease-in-out ${
               isMenuOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >
@@ -97,6 +101,13 @@ export default function Header() {
                 onClick={toggleMenu}
               >
                 SCHOLARSHIP
+              </Link>
+              <Link
+                href="/open-source"
+                className="text-xl font-medium hover:text-primary transition-colors"
+                onClick={toggleMenu}
+              >
+                OPEN SOURCE
               </Link>
               <Link
                 href="/careers"
