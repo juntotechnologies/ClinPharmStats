@@ -210,7 +210,7 @@ export default function AboutPage() {
 
                     <div>
                       <h3 className="text-xl font-semibold mb-3 relative">
-                        Biostatistics & SAS Experience
+                        Biostatistics & Statistical Programming Experience
                         <div className="w-16 h-1 bg-gradient-blue mt-2"></div>
                       </h3>
                       <div className="space-y-4">
@@ -523,7 +523,7 @@ export default function AboutPage() {
               </p>
               
               <p className="mb-6">
-                Our technical capabilities include randomization listing generation, SAS programming of statistical inferential efficacy tables and figures, and thorough validation of efficacy and safety summary tables, listings, and figures. We also perform interim analyses, exploratory analyses, and outcomes research to ensure your data is properly interpreted and presented.
+                Our technical capabilities include randomization listing generation, R, Python, and SAS programming of statistical inferential efficacy tables and figures, and thorough validation of efficacy and safety summary tables, listings, and figures. We also perform interim analyses, exploratory analyses, and outcomes research to ensure your data is properly interpreted and presented.
               </p>
               
               <p className="mb-6">
@@ -537,7 +537,7 @@ export default function AboutPage() {
               <h3 className="text-xl font-bold mb-4">Additional Services</h3>
               
               <p className="mb-6">
-                Beyond our biostatistical core services, we offer SAS programming, medical writing, FSP services, vendor management, and fixed cost project options to provide a complete solution for your clinical research needs.
+                Beyond our biostatistical core services, we offer R, Python, and SAS programming, medical writing, FSP services, vendor management, and fixed cost project options to provide a complete solution for your clinical research needs.
               </p>
               
               <div className="text-center mt-8">
@@ -739,7 +739,7 @@ export default function AboutPage() {
               <h3 className="text-xl font-bold mb-4">Efficient Project Management</h3>
               
               <p className="mb-6">
-                However, the need for extra work hours and pressure should be avoided by managing projects efficiently. It is generally the re-work on SAS programs which drives to situations of the need for extra hours of work. We have observed that most CROs create a havoc asking its clients for approval of engaging extra resources or justifying the need of extra hours of work whenever adhoc requests are received.
+                However, the need for extra work hours and pressure should be avoided by managing projects efficiently. It is generally the re-work on statistical programs which drives to situations of the need for extra hours of work. We have observed that most CROs create a havoc asking its clients for approval of engaging extra resources or justifying the need of extra hours of work whenever adhoc requests are received.
               </p>
               
               <p className="mb-6">

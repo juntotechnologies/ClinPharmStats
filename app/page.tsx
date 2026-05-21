@@ -133,7 +133,7 @@ export default function Home() {
               <p className="mb-4">
                 We support our clients by way of functional roles on clients projects, both on-site support and via
                 remote access to clients systems. Our professionals also support as Independent Statisticians and
-                Independent SAS Programmers for un-blinded analysis, and support DSMB and IDMC.
+                Independent R, Python, and SAS Programmers for un-blinded analysis, and support DSMB and IDMC.
               </p>
               <p>
                 We meet all criteria mandated by the GCP, ICH and FDA guidelines. Our professionals work closely with

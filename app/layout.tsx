@@ -10,12 +10,14 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "ClinPharmStats - Biostatistics & Clinical Research Services",
   description:
-    "Expert services in biostatistics, statistical programming, and clinical research for pharmaceutical and biotechnology companies. Specializing in SAS programming, clinical trials analysis, and FDA submissions.",
+    "Expert services in biostatistics, statistical programming, and clinical research for pharmaceutical and biotechnology companies. Specializing in R, Python, and SAS programming, clinical trials analysis, and FDA submissions.",
   generator: 'Next.js',
   keywords: [
     "biostatistics",
     "clinical research",
     "statistical programming",
+    "R programming",
+    "Python programming",
     "SAS programming",
     "clinical trials",
     "pharmaceutical statistics",
