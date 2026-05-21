@@ -1,11 +1,42 @@
 "use client"
 
-import { useState } from "react"
+import { type ReactNode, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ChevronRight, Users, FileText, Award, Target, X, Mail, Linkedin, Phone } from "lucide-react"
+import { ChevronRight, Users, FileText, Award, Target, X, Mail, Linkedin } from "lucide-react"
+
+function ProfileLinkButton({
+  href,
+  label,
+  children,
+  external = false,
+}: {
+  href: string
+  label: string
+  children: ReactNode
+  external?: boolean
+}) {
+  return (
+    <div className="group relative flex">
+      <Button variant="outline" size="icon" asChild>
+        <Link
+          href={href}
+          aria-label={label}
+          title={label}
+          {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+        >
+          {children}
+          <span className="sr-only">{label}</span>
+        </Link>
+      </Button>
+      <span className="pointer-events-none absolute left-1/2 top-full z-20 mt-2 -translate-x-1/2 whitespace-nowrap rounded bg-gray-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-md transition-opacity duration-0 group-hover:opacity-100 group-focus-within:opacity-100">
+        {label}
+      </span>
+    </div>
+  )
+}
 
 export default function AboutPage() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -78,7 +109,7 @@ export default function AboutPage() {
                   analysis and reporting for clinical trials.
                 </p>
                 <p>
-                  ClinPharmStats is a New Jersey Corporation, previously operating as NJ Biostatistics Inc since 1999.
+                  ClinPharmStats is a New Jersey Corporation, previously operating as Alpha Stats, Inc since 1999.
                   ClinPharmStats is headed by a Biostatistician with a PhD having over 25 years of statistical experience.
                 </p>
                 <p>
@@ -129,18 +160,12 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <div className="mt-6 flex justify-center gap-4">
-                    <Button variant="outline" size="icon" asChild>
-                      <Link href="mailto:shaun.porwal@gmail.com">
-                        <Mail className="h-4 w-4" />
-                        <span className="sr-only">Email</span>
-                      </Link>
-                    </Button>
-                    <Button variant="outline" size="icon" asChild>
-                      <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                        <Linkedin className="h-4 w-4" />
-                        <span className="sr-only">LinkedIn</span>
-                      </Link>
-                    </Button>
+                    <ProfileLinkButton href="mailto:shaun.porwal@gmail.com" label="Email">
+                      <Mail className="h-4 w-4" />
+                    </ProfileLinkButton>
+                    <ProfileLinkButton href="https://www.linkedin.com/in/vijay-chauhan-phd-41430314/" label="LinkedIn" external>
+                      <Linkedin className="h-4 w-4" />
+                    </ProfileLinkButton>
                   </div>
                 </div>
 
@@ -239,24 +264,15 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <div className="mt-6 flex justify-center gap-4">
-                    <Button variant="outline" size="icon" asChild>
-                      <Link href="mailto:shaun.porwal@gmail.com">
-                        <Mail className="h-4 w-4" />
-                        <span className="sr-only">Email</span>
-                      </Link>
-                    </Button>
-                    <Button variant="outline" size="icon" asChild>
-                      <Link href="https://linkedin.com/in/shaunporwal" target="_blank" rel="noopener noreferrer">
-                        <Linkedin className="h-4 w-4" />
-                        <span className="sr-only">LinkedIn</span>
-                      </Link>
-                    </Button>
-                    <Button variant="outline" size="icon" asChild>
-                      <Link href="https://shaunporwal.com" target="_blank" rel="noopener noreferrer">
-                        <FileText className="h-4 w-4" />
-                        <span className="sr-only">Website</span>
-                      </Link>
-                    </Button>
+                    <ProfileLinkButton href="mailto:shaun.porwal@gmail.com" label="Email">
+                      <Mail className="h-4 w-4" />
+                    </ProfileLinkButton>
+                    <ProfileLinkButton href="https://linkedin.com/in/shaunporwal" label="LinkedIn" external>
+                      <Linkedin className="h-4 w-4" />
+                    </ProfileLinkButton>
+                    <ProfileLinkButton href="https://shaunporwal.com/media/porwal-resume.pdf" label="Resume" external>
+                      <FileText className="h-4 w-4" />
+                    </ProfileLinkButton>
                   </div>
                 </div>
 
@@ -298,19 +314,19 @@ export default function AboutPage() {
                       </h3>
                       <div className="space-y-4">
                         <p>
-                          Shaun brings extensive expertise in data engineering, AI/ML implementation, and statistical analysis to ClinPharmStats. With a strong foundation in biomedical data science, he excels at bridging the gap between clinical research and advanced technology solutions.
+                          Shaun brings extensive expertise in data engineering, AI/ML implementation, biomedical AI systems, and statistical analysis to ClinPharmStats. With a strong foundation in biomedical data science, he excels at bridging the gap between clinical research, statistical methodology, and advanced technology solutions.
                         </p>
                         
                         <p>
-                          Since 2021, Shaun has been working at Memorial Sloan Kettering Cancer Center, where he has engineered data pipelines for surgical outcomes analysis, developed AI radiology pipelines with fine-tuned large language models, and led statistical analyses for landmark clinical studies. His experience also includes bioinformatics work at Sema4, where he built automated pipelines for genomic analysis.
+                          His work spans clinical data pipelines, medical imaging workflows, survival modeling, LLM-based tools, and statistical software development. He has applied methods including logistic regression, Cox proportional hazards models, Kaplan-Meier analysis, generalized additive models, decision curve analysis, C-index evaluation, AUC/F1 benchmarking, k-fold validation, stratified-split evaluation, and threshold optimization for clinical prediction and trial-matching workflows.
                         </p>
                         
                         <p>
-                          He has developed several open-source tools including the widely-used <a href="https://decisioncurveanalysis.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">dcurves</a> Python library (27k+ downloads) for evaluating binary and survival models, and enterprise solutions like no-more-sql, a fine-tuned Llama + RAG pipeline for secure text-to-SQL conversion.
+                          He has developed several open-source and research tools, including the widely used <a href="https://decisioncurveanalysis.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">dcurves</a> Python library for decision curve analysis, which has reached 60k+ downloads, along with biomedical AI platforms for dataset and model management, training and inference workflows, DICOM/NIfTI medical image review, clinical trial matching evaluation, and reproducible multimodal modeling pipelines.
                         </p>
                         
                         <p>
-                          Shaun is multilingual, speaking English, Mandarin Chinese, Hindi, Japanese, and Spanish, which enhances his ability to collaborate with international teams and clients. His unique combination of technical expertise and healthcare domain knowledge makes him an invaluable asset to ClinPharmStats and our clients.
+                          Shaun is multilingual, speaking English, Mandarin Chinese, Hindi, Japanese, and Spanish, which enhances his ability to collaborate with international teams and clients. His unique combination of technical expertise, statistical training, and healthcare domain knowledge makes him an invaluable asset to ClinPharmStats and our clients.
                         </p>
                       </div>
                     </div>
@@ -335,24 +351,12 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <div className="mt-6 flex justify-center gap-4">
-                    <Button variant="outline" size="icon" asChild>
-                      <Link href="mailto:gaurav@clinpharmstats.com">
-                        <Mail className="h-4 w-4" />
-                        <span className="sr-only">Email</span>
-                      </Link>
-                    </Button>
-                    <Button variant="outline" size="icon" asChild>
-                      <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                        <Linkedin className="h-4 w-4" />
-                        <span className="sr-only">LinkedIn</span>
-                      </Link>
-                    </Button>
-                    <Button variant="outline" size="icon" asChild>
-                      <Link href="tel:+12015551234">
-                        <Phone className="h-4 w-4" />
-                        <span className="sr-only">Phone</span>
-                      </Link>
-                    </Button>
+                    <ProfileLinkButton href="mailto:gaurav@clinpharmstats.com" label="Email">
+                      <Mail className="h-4 w-4" />
+                    </ProfileLinkButton>
+                    <ProfileLinkButton href="https://linkedin.com" label="LinkedIn" external>
+                      <Linkedin className="h-4 w-4" />
+                    </ProfileLinkButton>
                   </div>
                 </div>
 

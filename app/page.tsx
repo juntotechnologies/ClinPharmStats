@@ -127,7 +127,7 @@ export default function Home() {
                 and reporting for clinical trials.
               </p>
               <p className="mb-4">
-                ClinPharmStats is a New Jersey Corporation, previously operating as NJ Biostatistics Inc since 1999. ClinPharmStats
+                ClinPharmStats is a New Jersey Corporation, previously operating as Alpha Stats, Inc since 1999. ClinPharmStats
                 is headed by a Biostatistician with a PhD having over 25 years of statistical experience.
               </p>
               <p className="mb-4">
