@@ -2,18 +2,12 @@
 
 # PR Planning Template
 
-## Title (short, descriptive)
+## Title (short, descriptive, usable as PR branch name)
 
 ## Summary
 Describe the goal and scope of the PR in 1-2 sentences.
 
-## Files/Areas Touched
-- List the primary files or directories changed.
-
-## Motivation
-- Why is this change needed? Reference issues, user feedback, or audits.
-
-## Checklist (repo-applicable)
+## Checklist of PR tasks
 - [ ] Title/meta description updated (if applicable)
 - [ ] Headings (H1/H2) audited and corrected
 - [ ] Image alt text added/updated
@@ -23,14 +17,6 @@ Describe the goal and scope of the PR in 1-2 sentences.
 - [ ] Performance checks (images optimized, bundles audited)
 - [ ] Accessibility checks (contrast, keyboard nav)
 
-## Testing & Verification
-- How to test locally and in staging. Commands and expected results.
+## Smoke Tests - How to test locally and in staging. Commands and expected results.
 
-## Rollout/Deployment Notes
-- Any environment variables, infra changes, or redirects required.
-
-## Reviewer Notes
-- Anything reviewers should pay special attention to.
-
-## Reference
-- Link to original feedback, issues, or PDFs.
+- [ ] smoke test 1
