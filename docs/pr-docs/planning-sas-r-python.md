@@ -1,16 +1,8 @@
-# Planning: SAS/R/Python wording standardization
+-# Planning: SEO & Usability follow-ups
 
 Summary
 -------
-This PR standardizes wording across the site to the `SAS/R/Python` ordering and contains the small content edits already made (home, services, careers, about, layout). This planning doc captures applicable SEO/usability/performance items from the provided feedback that we can act on now or in follow-up PRs.
-
-What changed (already applied)
-- Updated wording to `SAS/R/Python` in the following files:
-  - `app/page.tsx`
-  - `app/services/page.tsx`
-  - `app/careers/page.tsx`
-  - `app/about/page.tsx`
-  - `app/layout.tsx` (metadata description)
+This planning doc captures applicable SEO, usability, and performance items distilled from the provided feedback PDF that we can act on now or in follow-up PRs. It intentionally does not include wording changes that have already been applied elsewhere.
 
 Immediate actionable items (applicable from feedback)
 - [ ] Title tag length: verify `metadata.title` in `app/layout.tsx` is 50–60 characters and adjust if needed.
