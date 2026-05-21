@@ -523,7 +523,7 @@ export default function AboutPage() {
               </p>
               
               <p className="mb-6">
-                Our technical capabilities include randomization listing generation, R, Python, and SAS programming of statistical inferential efficacy tables and figures, and thorough validation of efficacy and safety summary tables, listings, and figures. We also perform interim analyses, exploratory analyses, and outcomes research to ensure your data is properly interpreted and presented.
+                Our technical capabilities include randomization listing generation, SAS/R/Python programming of statistical inferential efficacy tables and figures, and thorough validation of efficacy and safety summary tables, listings, and figures. We also perform interim analyses, exploratory analyses, and outcomes research to ensure your data is properly interpreted and presented.
               </p>
               
               <p className="mb-6">
@@ -537,7 +537,7 @@ export default function AboutPage() {
               <h3 className="text-xl font-bold mb-4">Additional Services</h3>
               
               <p className="mb-6">
-                Beyond our biostatistical core services, we offer R, Python, and SAS programming, medical writing, FSP services, vendor management, and fixed cost project options to provide a complete solution for your clinical research needs.
+                Beyond our biostatistical core services, we offer SAS/R/Python programming, medical writing, FSP services, vendor management, and fixed cost project options to provide a complete solution for your clinical research needs.
               </p>
               
               <div className="text-center mt-8">

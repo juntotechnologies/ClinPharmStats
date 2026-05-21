@@ -1,7 +1,7 @@
-import Link from "next/link"
+import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
 
 export default function CareersPage() {
   return (
@@ -89,7 +89,7 @@ export default function CareersPage() {
                     <ul className="list-disc pl-5 space-y-1">
                       <li>PhD or MS in Statistics, Biostatistics, or related field</li>
                       <li>5+ years of experience in pharmaceutical/biotech industry</li>
-                      <li>Proficiency in R or Python programming</li>
+                      <li>Proficiency in SAS/R/Python programming</li>
                       <li>Knowledge of regulatory requirements</li>
                       <li>Excellent communication skills</li>
                     </ul>
@@ -107,7 +107,7 @@ export default function CareersPage() {
               <CardHeader>
                 <div className="flex flex-wrap justify-between items-start gap-2">
                   <div>
-                    <CardTitle>Python/R Programmer</CardTitle>
+                    <CardTitle>SAS/R/Python Programmer</CardTitle>
                     <CardDescription>Full-time | Piscataway, NJ (Remote options available)</CardDescription>
                   </div>
                 </div>
@@ -119,7 +119,7 @@ export default function CareersPage() {
                     <ul className="list-disc pl-5 space-y-1">
                       <li>Create SDTM and ADaM datasets</li>
                       <li>Generate tables, listings, and figures (TLFs)</li>
-                      <li>Develop and validate Python/R programs</li>
+                      <li>Develop and validate SAS/R/Python programs</li>
                       <li>Ensure data quality and integrity</li>
                       <li>Document programming processes</li>
                     </ul>
@@ -129,7 +129,7 @@ export default function CareersPage() {
                     <h3 className="font-semibold mb-2">Requirements:</h3>
                     <ul className="list-disc pl-5 space-y-1">
                       <li>Bachelor's degree in Statistics, Computer Science, or related field</li>
-                      <li>3+ years of Python or R programming experience in clinical trials</li>
+                      <li>3+ years of SAS/R/Python programming experience in clinical trials</li>
                       <li>Knowledge of CDISC standards (SDTM, ADaM)</li>
                       <li>Experience with statistical analysis and reporting</li>
                       <li>Attention to detail and problem-solving skills</li>
@@ -139,7 +139,7 @@ export default function CareersPage() {
               </CardContent>
               <CardFooter>
                 <Button asChild>
-                  <Link href="/contact?subject=Job Application: Python/R Programmer#contactForm">Apply Now</Link>
+                  <Link href="/contact?subject=Job Application: SAS/R/Python Programmer#contactForm">Apply Now</Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -161,4 +161,4 @@ export default function CareersPage() {
       </section>
     </div>
   )
-} 
+}

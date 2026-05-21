@@ -1,7 +1,7 @@
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { BarChart2, FileText, CheckCircle, FlaskRound } from "lucide-react"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { BarChart2, CheckCircle, FileText, FlaskRound } from "lucide-react"
+import Link from "next/link"
 
 export default function ServicesPage() {
   return (
@@ -77,13 +77,13 @@ export default function ServicesPage() {
                   <FileText className="h-8 w-8 text-white" />
                 </div>
                 <CardTitle className="text-2xl">Statistical Programming</CardTitle>
-                <CardDescription>Cutting-edge R and Python programming</CardDescription>
+                <CardDescription>Cutting-edge SAS/R/Python programming</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 shrink-0" />
-                    <span>Validated R and Python environments</span>
+                    <span>Validated SAS/R/Python environments</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="h-5 w-5 text-primary mr-2 mt-0.5 shrink-0" />
@@ -167,4 +167,4 @@ export default function ServicesPage() {
       </section>
     </div>
   )
-} 
+}

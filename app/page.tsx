@@ -1,8 +1,8 @@
-import Image from "next/image"
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ChevronRight, FileText, Users, Award, BarChart2, CheckCircle, TrendingUp, Zap } from "lucide-react"
+import { Award, BarChart2, CheckCircle, ChevronRight, FileText, TrendingUp, Users, Zap } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -17,8 +17,8 @@ export default function Home() {
                 Specialized Biostatistics & Clinical Research Services
               </h1>
               <p className="text-lg mb-8 text-white/90">
-                Expert biostatistics and clinical research services for pharmaceutical companies, 
-                with cutting-edge statistical programming using R and Python.
+                Expert biostatistics and clinical research services for pharmaceutical companies,
+                with cutting-edge statistical programming using SAS/R/Python.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90">
@@ -98,7 +98,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-center mb-3">Statistical Programming</h3>
                 <p className="text-center text-muted-foreground mb-6">
-                  Cutting-edge R and Python programming for advanced statistical analysis.
+                  Cutting-edge SAS/R/Python programming for advanced statistical analysis.
                 </p>
                 <Button asChild variant="outline" className="w-full">
                   <Link href="/services" className="flex items-center justify-center">
@@ -122,7 +122,7 @@ export default function Home() {
             </div>
             <div className="prose prose-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
               <p className="mb-4">
-                We provide biostatistics and statistical programming services to the pharmaceutical 
+                We provide biostatistics and statistical programming services to the pharmaceutical
                 and biotechnology industry. Our focus is on delivering high-quality statistical analysis
                 and reporting for clinical trials.
               </p>
@@ -133,7 +133,7 @@ export default function Home() {
               <p className="mb-4">
                 We support our clients by way of functional roles on clients projects, both on-site support and via
                 remote access to clients systems. Our professionals also support as Independent Statisticians and
-                Independent R, Python, and SAS Programmers for un-blinded analysis, and support DSMB and IDMC.
+                Independent SAS/R/Python Programmers for un-blinded analysis, and support DSMB and IDMC.
               </p>
               <p>
                 We meet all criteria mandated by the GCP, ICH and FDA guidelines. Our professionals work closely with
@@ -252,4 +252,4 @@ export default function Home() {
       </section>
     </div>
   )
-} 
+}
