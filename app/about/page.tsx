@@ -1,11 +1,11 @@
 "use client"
 
-import { type ReactNode, useState } from "react"
-import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ChevronRight, Users, FileText, Award, Target, X, Mail, Linkedin } from "lucide-react"
+import { Award, ChevronRight, FileText, Linkedin, Mail, Target, Users, X } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
+import { type ReactNode, useState } from "react"
 
 function ProfileLinkButton({
   href,
@@ -51,7 +51,7 @@ export default function AboutPage() {
   const handleCloseExpanded = () => {
     setIsExpanded(false);
   };
-  
+
   const handleExpandClinicCard = () => {
     setIsClinicExpanded(true);
   };
@@ -59,7 +59,7 @@ export default function AboutPage() {
   const handleCloseClinicExpanded = () => {
     setIsClinicExpanded(false);
   };
-  
+
   const handleExpandMissionCard = () => {
     setIsMissionExpanded(true);
   };
@@ -67,7 +67,7 @@ export default function AboutPage() {
   const handleCloseMissionExpanded = () => {
     setIsMissionExpanded(false);
   };
-  
+
   const handleExpandWhyCard = () => {
     setIsWhyExpanded(true);
   };
@@ -189,7 +189,7 @@ export default function AboutPage() {
                             <p className="text-muted-foreground">McGill University, Montreal, Canada</p>
                           </div>
                         </div>
-                        
+
                         <div className="flex flex-col md:flex-row md:gap-4">
                           <div className="font-semibold text-primary whitespace-nowrap">1986-1987</div>
                           <div>
@@ -197,7 +197,7 @@ export default function AboutPage() {
                             <p className="text-muted-foreground">Swiss Federal Institute of Technology, Zurich, Switzerland</p>
                           </div>
                         </div>
-                        
+
                         <div className="flex flex-col md:flex-row md:gap-4">
                           <div className="font-semibold text-primary whitespace-nowrap">1982-1985</div>
                           <div>
@@ -215,24 +215,24 @@ export default function AboutPage() {
                       </h3>
                       <div className="space-y-4">
                         <p>
-                          PhD in Statistics with specialization in mixed models methodology for prediction of fixed and random effects, 
-                          and in estimating variance components. Over 25 years of statistical experience including 13 years in the 
+                          PhD in Statistics with specialization in mixed models methodology for prediction of fixed and random effects,
+                          and in estimating variance components. Over 25 years of statistical experience including 13 years in the
                           pharmaceutical and biotech companies and CROs.
                         </p>
-                        
+
                         <p>
-                          Responsibilities in various assignments in the pharmaceutical industry included protocol development, 
-                          writing Statistical Analysis Plans and programming specifications, supporting IDMC, DSMB and drug development 
-                          advisory boards in evaluation and interpretation of clinical trial results and formulating recommendations, 
-                          integrated summary of efficacy and safety, CRFs review, contributing to writing of clinical study reports 
-                          and pre-NDA briefing packages, direct interactions with FDA reviewers and responding to FDA queries, 
+                          Responsibilities in various assignments in the pharmaceutical industry included protocol development,
+                          writing Statistical Analysis Plans and programming specifications, supporting IDMC, DSMB and drug development
+                          advisory boards in evaluation and interpretation of clinical trial results and formulating recommendations,
+                          integrated summary of efficacy and safety, CRFs review, contributing to writing of clinical study reports
+                          and pre-NDA briefing packages, direct interactions with FDA reviewers and responding to FDA queries,
                           assisting Regulatory Affairs in drafting letters of responses to FDA.
                         </p>
-                        
+
                         <p>
-                          Therapeutic areas of experience include cardiovascular, hypertension, diabetes, oncology, Mesothelioma trials, 
-                          Dermatology (Acne Vulgaris), CNS (Bipolar I Disorder and Schizophrenia), weight loss, anti-fungal, pain studies, 
-                          diagnostic imaging, anti-infective (complicated skin structure infections, complicated intra-abdominal infection), 
+                          Therapeutic areas of experience include cardiovascular, hypertension, diabetes, oncology, Mesothelioma trials,
+                          Dermatology (Acne Vulgaris), CNS (Bipolar I Disorder and Schizophrenia), weight loss, anti-fungal, pain studies,
+                          diagnostic imaging, anti-infective (complicated skin structure infections, complicated intra-abdominal infection),
                           postmenopausal management and contraceptive studies.
                         </p>
                       </div>
@@ -296,7 +296,7 @@ export default function AboutPage() {
                             <p className="text-muted-foreground">Icahn School of Medicine at Mount Sinai</p>
                           </div>
                         </div>
-                        
+
                         <div className="flex flex-col md:flex-row md:gap-4">
                           <div className="font-semibold text-primary whitespace-nowrap">2019</div>
                           <div>
@@ -316,15 +316,15 @@ export default function AboutPage() {
                         <p>
                           Shaun brings extensive expertise in data engineering, AI/ML implementation, biomedical AI systems, and statistical analysis to ClinPharmStats. With a strong foundation in biomedical data science, he excels at bridging the gap between clinical research, statistical methodology, and advanced technology solutions.
                         </p>
-                        
+
                         <p>
                           His work spans clinical data pipelines, medical imaging workflows, survival modeling, LLM-based tools, and statistical software development. He has applied methods including logistic regression, Cox proportional hazards models, Kaplan-Meier analysis, generalized additive models, decision curve analysis, C-index evaluation, AUC/F1 benchmarking, k-fold validation, stratified-split evaluation, and threshold optimization for clinical prediction and trial-matching workflows.
                         </p>
-                        
+
                         <p>
                           He has developed several open-source and research tools, including the widely used <a href="https://decisioncurveanalysis.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">dcurves</a> Python library for decision curve analysis, which has reached 60k+ downloads, along with biomedical AI platforms for dataset and model management, training and inference workflows, DICOM/NIfTI medical image review, clinical trial matching evaluation, and reproducible multimodal modeling pipelines.
                         </p>
-                        
+
                         <p>
                           Shaun is multilingual, speaking English, Mandarin Chinese, Hindi, Japanese, and Spanish, which enhances his ability to collaborate with international teams and clients. His unique combination of technical expertise, statistical training, and healthcare domain knowledge makes him an invaluable asset to ClinPharmStats and our clients.
                         </p>
@@ -380,7 +380,7 @@ export default function AboutPage() {
                             <p className="text-muted-foreground">Keller Graduate School of Management</p>
                           </div>
                         </div>
-                        
+
                         <div className="flex flex-col md:flex-row md:gap-4">
                           <div className="font-semibold text-primary whitespace-nowrap">2006</div>
                           <div>
@@ -400,15 +400,15 @@ export default function AboutPage() {
                         <p>
                           Gaurav has over 15 years of experience in operations management within the pharmaceutical and healthcare industries. He specializes in optimizing project workflows, resource allocation, and process improvement.
                         </p>
-                        
+
                         <p>
                           At ClinPharmStats, Gaurav oversees day-to-day operations, ensures project timelines and deliverables are met, and coordinates between statistical teams and clients. His expertise in project management methodologies has been instrumental in streamlining our service delivery and enhancing client satisfaction.
                         </p>
-                        
+
                         <p>
                           Prior to joining ClinPharmStats, Gaurav held operations roles at leading CROs where he managed cross-functional teams and implemented process improvements that significantly reduced project timelines while maintaining quality standards.
                         </p>
-                        
+
                         <p>
                           His combination of business acumen and understanding of the clinical research landscape makes him an essential part of our leadership team, ensuring that our statistical expertise is delivered through efficient operational frameworks.
                         </p>
@@ -505,41 +505,41 @@ export default function AboutPage() {
       {isExpanded && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4 overflow-y-auto">
           <div className="bg-white text-gray-800 p-8 rounded-lg shadow-xl max-w-4xl relative max-h-[90vh] overflow-y-auto">
-            <button 
+            <button
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 p-2 rounded-full bg-gray-100"
               onClick={handleCloseExpanded}
             >
               <X className="h-6 w-6" />
             </button>
-            
+
             <h2 className="text-3xl font-bold mb-6 text-primary">Biostatistical Experience</h2>
             <div className="w-20 h-1 bg-gradient-blue mb-8"></div>
-            
+
             <div className="prose prose-lg max-w-none">
               <h3 className="text-xl font-bold mb-4">Our Services</h3>
-              
+
               <p className="mb-6">
                 We offer comprehensive biostatistical expertise across all phases of clinical research. Our experienced team provides services including study design and protocol development, sample size calculations, and statistical analysis planning to establish a solid foundation for your clinical trials.
               </p>
-              
+
               <p className="mb-6">
                 Our technical capabilities include randomization listing generation, SAS/R/Python programming of statistical inferential efficacy tables and figures, and thorough validation of efficacy and safety summary tables, listings, and figures. We also perform interim analyses, exploratory analyses, and outcomes research to ensure your data is properly interpreted and presented.
               </p>
-              
+
               <p className="mb-6">
                 For specialized needs, we serve as independent statisticians for un-blinded analyses and as DSMB statisticians. Our regulatory support includes NDA/BLA pre-meeting package preparation, assistance to advisory and expert groups for critical analyses of clinical trials data, and support for medical writers in drafting clinical study reports.
               </p>
-              
+
               <p className="mb-6">
                 We provide comprehensive statistical report writing and abbreviated report writing services, and are experienced in preparing responses to FDA review questions to ensure regulatory compliance and approval.
               </p>
-              
+
               <h3 className="text-xl font-bold mb-4">Additional Services</h3>
-              
+
               <p className="mb-6">
                 Beyond our biostatistical core services, we offer SAS/R/Python programming, medical writing, FSP services, vendor management, and fixed cost project options to provide a complete solution for your clinical research needs.
               </p>
-              
+
               <div className="text-center mt-8">
                 <Button variant="outline" onClick={handleCloseExpanded}>
                   Close
@@ -549,24 +549,24 @@ export default function AboutPage() {
           </div>
         </div>
       )}
-      
+
       {/* Expanded Clinical Experience Modal */}
       {isClinicExpanded && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4 overflow-y-auto">
           <div className="bg-white text-gray-800 p-8 rounded-lg shadow-xl max-w-4xl relative max-h-[90vh] overflow-y-auto">
-            <button 
+            <button
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 p-2 rounded-full bg-gray-100"
               onClick={handleCloseClinicExpanded}
             >
               <X className="h-6 w-6" />
             </button>
-            
+
             <h2 className="text-3xl font-bold mb-6 text-accent">Clinical Experience</h2>
             <div className="w-20 h-1 bg-gradient-blue mb-8"></div>
-            
+
             <div className="prose prose-lg max-w-none">
               <h3 className="text-xl font-bold mb-4">Therapeutic Areas of Experience</h3>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 mb-8">
                 <div className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-accent mt-2 mr-2"></div>
@@ -641,23 +641,23 @@ export default function AboutPage() {
                   <span>Dentifrices</span>
                 </div>
               </div>
-              
+
               <h3 className="text-xl font-bold mb-4">Industry Experience</h3>
-              
+
               <p className="mb-6">
                 Our experience spans Phase 1 to 4 clinical trials gained working with major pharmaceutical companies and research organizations including:
               </p>
-              
+
               <p className="mb-6">
                 Bayer HealthCare, Pfizer, Genentech Inc, Johnson & Johnson Pharmaceutical Research and Development, J&J, Janssen Research Foundation, Glaxo SmithKline, NIH, McNeil Consumer Healthcare, Purdue Pharma LLP, Mitsubishi, DepoMed Inc, Sumitomo Pharmaceuticals America Ltd, Sankyo-Pharma USA, Baxter Pharmaceutical Company, Knoll Pharmaceutical Company, Alfacell inc, and BioTime Inc.
               </p>
-              
+
               <h3 className="text-xl font-bold mb-4">Additional Services</h3>
-              
+
               <p className="mb-6">
                 We also provide specialized Health Economics and Outcomes Research (HEOR) services and Publication Support to complement our clinical data analysis and reporting capabilities.
               </p>
-              
+
               <div className="text-center mt-8">
                 <Button variant="outline" onClick={handleCloseClinicExpanded}>
                   Close
@@ -667,40 +667,40 @@ export default function AboutPage() {
           </div>
         </div>
       )}
-      
+
       {/* Expanded Mission & Vision Modal */}
       {isMissionExpanded && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4 overflow-y-auto">
           <div className="bg-white text-gray-800 p-8 rounded-lg shadow-xl max-w-4xl relative max-h-[90vh] overflow-y-auto">
-            <button 
+            <button
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 p-2 rounded-full bg-gray-100"
               onClick={handleCloseMissionExpanded}
             >
               <X className="h-6 w-6" />
             </button>
-            
+
             <h2 className="text-3xl font-bold mb-6 text-info">Mission & Vision</h2>
             <div className="w-20 h-1 bg-gradient-blue mb-8"></div>
-            
+
             <div className="prose prose-lg max-w-none">
               <h3 className="text-xl font-bold mb-4">Our Mission</h3>
-              
+
               <p className="mb-6">
                 ClinPharmStats is committed to its clients for an excellent relationship in partnering work on clinical development and achieving their goals and objectives. Quality is always at the top priority while keeping costs low and timely completion of projects.
               </p>
-              
+
               <h3 className="text-xl font-bold mb-4">Our Vision</h3>
-              
+
               <p className="mb-6">
                 ClinPharmStats is a specialty CRO for Biostatistics, Statistical Programming, and Medical Writing. In addition, we are planning for undertaking clinical data management projects at our facility in New Jersey.
               </p>
-              
+
               <h3 className="text-xl font-bold mb-4">Future Initiatives</h3>
-              
+
               <p className="mb-6">
                 We are discussing creating facilities for pre-clinical research in India. We are looking for partners and investors for pre-clinical development program.
               </p>
-              
+
               <div className="text-center mt-8">
                 <Button variant="outline" onClick={handleCloseMissionExpanded}>
                   Close
@@ -710,58 +710,58 @@ export default function AboutPage() {
           </div>
         </div>
       )}
-      
+
       {/* Expanded Why ClinPharmStats Modal */}
       {isWhyExpanded && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4 overflow-y-auto">
           <div className="bg-white text-gray-800 p-8 rounded-lg shadow-xl max-w-4xl relative max-h-[90vh] overflow-y-auto">
-            <button 
+            <button
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 p-2 rounded-full bg-gray-100"
               onClick={handleCloseWhyExpanded}
             >
               <X className="h-6 w-6" />
             </button>
-            
+
             <h2 className="text-3xl font-bold mb-6 text-success">Why ClinPharmStats</h2>
             <div className="w-20 h-1 bg-gradient-blue mb-8"></div>
-            
+
             <div className="prose prose-lg max-w-none">
               <h3 className="text-xl font-bold mb-4">Cost-Effective Approach</h3>
-              
+
               <p className="mb-6">
                 ClinPharmStats is a cost effective CRO committed to high quality and timely completion of clients projects. ClinPharmStats is against unnecessary overtime billings and change orders. Since employees in most of the pharmaceutical companies are not paid for overtime, it is unreasonable for CROs to burden clients on account of overtime.
               </p>
-              
+
               <p className="mb-6">
                 It is well known that workload can be light at some time points, so it is unreasonable to bill clients for overtime whenever resources are required to put in a little more time and effort. The full time employee (FTE) model is helpful to client as well as CROs. The FTE model considers extra hours of effort as a part of their job responsibilities.
               </p>
-              
+
               <h3 className="text-xl font-bold mb-4">Efficient Project Management</h3>
-              
+
               <p className="mb-6">
                 However, the need for extra work hours and pressure should be avoided by managing projects efficiently. It is generally the re-work on statistical programs which drives to situations of the need for extra hours of work. We have observed that most CROs create a havoc asking its clients for approval of engaging extra resources or justifying the need of extra hours of work whenever adhoc requests are received.
               </p>
-              
+
               <p className="mb-6">
                 In such situation clients do not have much to say because such requests are generally urgent, and eventually clients end up paying CROs exorbitantly. ClinPharmStats handles such situations by reprioritizing the tasks and by obtaining sufficient specifications and documentation for execution of such requests. Sufficient specifications are very important in a fast execution of any adhoc analysis.
               </p>
-              
+
               <h3 className="text-xl font-bold mb-4">Dedicated Professionals</h3>
-              
+
               <p className="mb-6">
                 Our professionals happily devote extra hours at no additional cost and are flexible in making them available beyond regular work hours and even weekends. Cooperation and dedication of our professionals have eliminated overtime costs for our clients. Our professionals are highly experienced with excellent communication skills.
               </p>
-              
+
               <h3 className="text-xl font-bold mb-4">Client-Focused Resource Selection</h3>
-              
+
               <p className="mb-6">
                 Unlike many CROs, ClinPharmStats involves its clients in face to face technical screening and selection of resources for their projects. We have observed that many CROs engage resources with insufficient experience after the award of projects outsourced to them. ClinPharmStats identifies resources up front before starting any project and the same resources support the client until completion.
               </p>
-              
+
               <p className="mb-6">
                 Our resources communicate directly with the client's team in an attempt to be treated as extended team member. ClinPharmStats always tries to accommodate within our clients budget.
               </p>
-              
+
               <div className="text-center mt-8">
                 <Button variant="outline" onClick={handleCloseWhyExpanded}>
                   Close
@@ -773,4 +773,4 @@ export default function AboutPage() {
       )}
     </div>
   )
-} 
+}
