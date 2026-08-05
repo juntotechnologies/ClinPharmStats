@@ -1,6 +1,6 @@
 # PR 2: Remove the public contact form
 
-Status: underway
+Status: done
 Branch: `fix/remove-contact-form`
 
 ## Goal
