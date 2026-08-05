@@ -1,6 +1,6 @@
-# PR planned: Remove the public contact form
+# PR 2: Remove the public contact form
 
-Status: planned
+Status: underway
 Branch: `fix/remove-contact-form`
 
 ## Goal
@@ -14,3 +14,4 @@ Stop FormSubmit notifications while preserving clear email-based contact options
 - [x] Preserve the notice that employment inquiries are not accepted.
 - [x] Verify email contact links remain available across the site.
 - [x] Update focused tests and verify the production build.
+

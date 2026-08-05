@@ -2,7 +2,7 @@
 
 ## Active
 
-- [Remove the public contact form](planned-remove-contact-form.md)
+- [PR 2: Remove the public contact form](2-remove-contact-form.md)
 
 ## Archive
 
