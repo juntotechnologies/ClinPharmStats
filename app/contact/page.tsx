@@ -4,12 +4,7 @@ import type React from "react"
 
 import { useState, useEffect, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Mail, MapPin, Clock, Paperclip } from "lucide-react"
+import { Mail, MapPin } from "lucide-react"
 
 // Contact form component with search params
 function ContactForm() {
@@ -22,7 +17,7 @@ function ContactForm() {
     message: "",
   })
 
-  const [attachment, setAttachment] = useState<File | null>(null)
+  const [honeypot, setHoneypot] = useState("")
   
   const [status, setStatus] = useState({
     submitted: false,
@@ -45,12 +40,6 @@ function ContactForm() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      setAttachment(e.target.files[0])
-    }
-  }
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus((prevStatus) => ({ ...prevStatus, submitting: true }))
@@ -62,13 +51,10 @@ function ContactForm() {
       formSubmitData.append('email', formData.email);
       formSubmitData.append('_subject', formData.subject);
       formSubmitData.append('message', formData.message);
-      formSubmitData.append('_captcha', 'false');
+      formSubmitData.append('_captcha', 'true');
+      formSubmitData.append('_honey', honeypot);
+      formSubmitData.append('_blacklist', 'Dear Hiring Manager,job application,resume,curriculum vitae,employment opportunity');
       formSubmitData.append('_template', 'table');
-      
-      // Add attachment if exists
-      if (attachment) {
-        formSubmitData.append('attachment', attachment);
-      }
       
       // Send data to FormSubmit using fetch
       const response = await fetch('https://formsubmit.co/ajax/shaun.porwal@gmail.com', {
@@ -91,7 +77,7 @@ function ContactForm() {
           subject: "",
           message: "",
         });
-        setAttachment(null);
+        setHoneypot("");
       } else {
         // Error
         throw new Error("Form submission failed. Please try again.");
@@ -160,9 +146,24 @@ function ContactForm() {
             {/* Contact Form */}
             <div id="contactForm" className="bg-white p-8 rounded-lg shadow-lg" style={{ scrollMarginTop: '100px' }}>
               <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
+              <p className="mb-6 rounded-md bg-amber-50 p-4 text-sm text-amber-900">
+                We are not currently hiring and are not accepting employment inquiries or unsolicited résumés.
+              </p>
               
               {!status.submitted ? (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="hidden" aria-hidden="true">
+                    <label htmlFor="website">Website</label>
+                    <input
+                      type="text"
+                      name="_honey"
+                      id="website"
+                      value={honeypot}
+                      onChange={(event) => setHoneypot(event.target.value)}
+                      tabIndex={-1}
+                      autoComplete="off"
+                    />
+                  </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -223,37 +224,6 @@ function ContactForm() {
                       className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                     ></textarea>
                   </div>
-                  
-                  <div>
-                    <div className="flex items-center">
-                      <label className="flex items-center px-4 py-2 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-50">
-                        <Paperclip className="h-5 w-5 text-gray-500 mr-2" />
-                        <span className="text-sm text-gray-500">
-                          {attachment ? attachment.name : 'Choose a file'}
-                        </span>
-                        <input
-                          type="file"
-                          id="attachment"
-                          name="attachment"
-                          onChange={handleFileChange}
-                          className="sr-only"
-                        />
-                      </label>
-                      {attachment && (
-                        <button
-                          type="button"
-                          onClick={() => setAttachment(null)}
-                          className="ml-2 text-sm text-red-500 hover:text-red-700"
-                        >
-                          Remove
-                        </button>
-                      )}
-                    </div>
-                    <p className="mt-1 text-xs text-gray-500">
-                      Max file size: 10MB. Supported format: PDF
-                    </p>
-                  </div>
-
                   <button
                     type="submit"
                     disabled={status.submitting}
@@ -321,4 +291,4 @@ export default function ContactPage() {
       <ContactForm />
     </Suspense>
   );
-} 
+}
