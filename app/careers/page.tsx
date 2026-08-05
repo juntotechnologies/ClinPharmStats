@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
@@ -60,6 +59,13 @@ export default function CareersPage() {
 
           {/* Current Openings */}
           <h2 className="text-3xl font-bold text-center mb-8">Current Openings</h2>
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-lg text-muted-foreground">
+              There are no open positions at this time. Keep an eye on this page — new opportunities are posted here as they open up.
+            </p>
+          </div>
+
+          {/*
           <div className="space-y-6 max-w-4xl mx-auto">
             <Card>
               <CardHeader>
@@ -144,10 +150,11 @@ export default function CareersPage() {
               </CardFooter>
             </Card>
           </div>
+          */}
         </div>
       </section>
 
-      {/* General Application */}
+      {/* General Application
       <section className="py-12 bg-secondary">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold mb-4">Don't See a Position That Fits?</h2>
@@ -159,6 +166,7 @@ export default function CareersPage() {
           </Button>
         </div>
       </section>
+      */}
     </div>
   )
 }

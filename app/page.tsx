@@ -38,7 +38,7 @@ export default function Home() {
                     alt="Cookie - ClinPharmStats Chief Happiness Officer"
                     width={500}
                     height={400}
-                    className="rounded-lg shadow-lg"
+                    className="rounded-lg shadow-lg w-auto h-auto"
                     priority
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/90 to-primary/60 text-white p-4 rounded-b-lg backdrop-blur-sm">

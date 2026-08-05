@@ -126,9 +126,9 @@ export default function Footer() {
             <Image 
               src="/images/cookie.png" 
               alt="Cookie Policy" 
-              width={800} 
-              height={600} 
-              className="rounded-lg shadow-2xl"
+              width={800}
+              height={600}
+              className="rounded-lg shadow-2xl w-auto h-auto"
               onClick={(e) => e.stopPropagation()}
             />
           </div>
