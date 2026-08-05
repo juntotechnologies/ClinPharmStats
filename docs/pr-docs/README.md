@@ -2,7 +2,7 @@
 
 ## Active
 
-_No active PRs._
+- [PR 2: Remove the public contact form](2-remove-contact-form.md)
 
 ## Archive
 
