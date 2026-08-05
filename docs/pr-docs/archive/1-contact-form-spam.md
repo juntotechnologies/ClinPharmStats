@@ -1,6 +1,6 @@
 # PR 1: Reduce contact form spam
 
-Status: underway
+Status: done
 Branch: `fix/contact-form-spam`
 
 ## Goal

@@ -2,4 +2,10 @@
 
 ## Active
 
-- [PR 1: Reduce contact form spam](1-contact-form-spam.md)
+_No active PRs._
+
+## Archive
+
+| Doc | Description |
+| --- | --- |
+| [PR 1](archive/1-contact-form-spam.md) | Reduce contact form spam |
