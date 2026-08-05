@@ -4,13 +4,12 @@ import test from "node:test"
 
 const contactPage = readFileSync(new URL("../app/contact/page.tsx", import.meta.url), "utf8")
 
-test("contact form enables FormSubmit spam controls", () => {
-  assert.doesNotMatch(contactPage, /formSubmitData\.append\('_captcha', 'false'\)/)
-  assert.match(contactPage, /formSubmitData\.append\('_honey', honeypot\)/)
-  assert.match(contactPage, /formSubmitData\.append\('_blacklist',/)
+test("contact page does not expose a submission form or FormSubmit endpoint", () => {
+  assert.doesNotMatch(contactPage, /<form/)
+  assert.doesNotMatch(contactPage, /formsubmit\.co/i)
 })
 
-test("contact form does not accept employment attachments", () => {
-  assert.doesNotMatch(contactPage, /type="file"/)
+test("contact page retains direct business contact and hiring guidance", () => {
+  assert.match(contactPage, /mailto:shaun\.porwal@gmail\.com/)
   assert.match(contactPage, /not accepting employment inquiries or unsolicited résumés/i)
 })
