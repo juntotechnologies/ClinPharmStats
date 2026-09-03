@@ -26,3 +26,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .DS_Store
+docs/strategy/contact-tracker.md
+docs/strategy/icp-report.md
