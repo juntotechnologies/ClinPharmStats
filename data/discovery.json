@@ -96,42 +96,42 @@
       "name": "About Us",
       "title": "About Us | ClinPharmStats",
       "description": "ClinPharmStats is a New Jersey corporation that provides biostatistics and clinical research services. This page describes the company and its team.",
-      "source": "app/about/page.tsx"
+      "source": "app/about"
     },
     {
       "path": "/services/",
       "name": "Services",
       "title": "Biostatistics and Programming Services | ClinPharmStats",
       "description": "ClinPharmStats supports Phase 1 clinical trials and early drug development. The services are biostatistics, statistical programming and early drug development support.",
-      "source": "app/services/page.tsx"
+      "source": "app/services"
     },
     {
       "path": "/scholarship/",
       "name": "Scholarship",
       "title": "Scholarship | ClinPharmStats",
       "description": "This page lists publications by Shaun Porwal and Vijay Chauhan. The topics are biostatistics and clinical research.",
-      "source": "app/scholarship/page.tsx"
+      "source": "app/scholarship"
     },
     {
       "path": "/open-source/",
       "name": "Open Source",
       "title": "Open Source | ClinPharmStats",
       "description": "ClinPharmStats makes open source tools for clinical research. BioEq is a Python package for bioequivalence analysis.",
-      "source": "app/open-source/page.tsx"
+      "source": "app/open-source"
     },
     {
       "path": "/careers/",
       "name": "Careers",
       "title": "Careers | ClinPharmStats",
       "description": "The careers page of ClinPharmStats lists open positions. No positions are open at this time.",
-      "source": "app/careers/page.tsx"
+      "source": "app/careers"
     },
     {
       "path": "/contact/",
       "name": "Contact",
       "title": "Contact | ClinPharmStats",
       "description": "The office of ClinPharmStats is in Piscataway, New Jersey. This page gives the business contact for service inquiries.",
-      "source": "app/contact/page.tsx"
+      "source": "app/contact"
     }
   ],
   "openSource": [
