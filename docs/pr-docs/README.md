@@ -2,7 +2,9 @@
 
 ## Active
 
-_No active PRs._
+| Doc | Description |
+| --- | --- |
+| [PR 3](3-seo-agent-files.md) | Search and agent files |
 
 ## Archive
 

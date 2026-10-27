@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { BarChart2, CheckCircle, FileText, FlaskRound } from "lucide-react"
+import { pageMetadata } from "@/lib/seo/next"
 import Link from "next/link"
+
+export const metadata = pageMetadata("/services/")
 
 export default function ServicesPage() {
   return (

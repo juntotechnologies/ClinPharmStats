@@ -1,17 +1,9 @@
 import { Award, BookOpen, ExternalLink } from "lucide-react"
-import { Metadata } from "next"
+import { pageMetadata } from "@/lib/seo/next"
 import Link from "next/link"
 import "./page.css"
 
-export const metadata: Metadata = {
-  title: "Scholarship | ClinPharmStats",
-  description: "Publications and research contributions by Shaun Porwal, Vijay Chauhan, and the ClinPharmStats team in biostatistics and clinical research.",
-  keywords: ["publications", "research", "academic papers", "biostatistics research", "clinical trials publications"],
-  openGraph: {
-    title: "Academic Publications | ClinPharmStats",
-    description: "Research publications and academic contributions in biostatistics and clinical research.",
-  },
-}
+export const metadata = pageMetadata("/scholarship/")
 
 interface Publication {
   title: string

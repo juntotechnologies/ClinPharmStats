@@ -6,9 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "test": "node --test",
-    "deploy": "next build && touch out/.nojekyll"
+    "deploy": "next build && touch out/.nojekyll",
+    "seo": "node scripts/generate-seo.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

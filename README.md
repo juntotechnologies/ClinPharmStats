@@ -32,12 +32,20 @@ If you need to deploy manually:
    git push
    ```
 
+## Search and agent files
+
+`data/discovery.json` is the one source. `npm run seo` writes the search and agent files and their images into `public/`. `npm test` fails when a generated file drifts from the source.
+
 ## Project Structure
 
 - `app/` - Next.js app directory containing all pages and layouts
 - `components/` - Reusable UI components
 - `public/` - Static assets like images
 - `lib/` - Utility functions and shared code
+- `lib/seo/` - Generators for the search and agent files
+- `data/` - The discovery data source
+- `scripts/` - Commands that write files
+- `tests/` - Tests, including the drift check
 
 ## Configuration
 
