@@ -9,6 +9,7 @@ import json
 import re
 import requests
 import time
+from page_citations import citation_pattern, set_citations
 from typing import Dict, List, Optional, Any
 
 # PubMed API endpoints
@@ -182,30 +183,17 @@ def update_tsx_file(citation_data: Dict[str, int]) -> None:
     
     # Update citation counts for each publication
     for title, citations in citation_data.items():
-        # Escape special characters in the title for regex
-        escaped_title = re.escape(title)
-        
-        # Find the publication in the file and update its citation count
-        pattern = rf'title: "{escaped_title}",[^}}]*citations: (null|\d+)'
-        
-        if re.search(pattern, content):
-            # Replace the citation count
-            replacement = f'citations: {citations}'
-            modified_content = re.sub(
-                pattern, 
-                lambda m: m.group(0).replace(m.group(1), str(citations)), 
-                content
-            )
-            
-            if modified_content != content:
-                content = modified_content
-                updated_count += 1
-                print(f"  ✓ Updated citation count for: {title[:50]}... ({citations} citations)")
-            else:
-                print(f"  ℹ No change needed for: {title[:50]}...")
-        else:
+        if not citation_pattern(title).search(content):
             print(f"  ✗ Could not find publication in file: {title[:50]}...")
-    
+            continue
+        modified_content = set_citations(content, title, citations)
+        if modified_content == content:
+            print(f"  ℹ No change needed for: {title[:50]}...")
+            continue
+        content = modified_content
+        updated_count += 1
+        print(f"  ✓ Updated citation count for: {title[:50]}... ({citations} citations)")
+
     # Write the updated content back to the file
     with open(file_path, 'w') as file:
         file.write(content)
