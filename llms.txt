@@ -1,0 +1,53 @@
+# ClinPharmStats
+
+> ClinPharmStats provides biostatistics and statistical programming services to pharmaceutical and biotechnology companies. The services support clinical trials.
+
+ClinPharmStats is a New Jersey corporation. The About page gives 1999 as the start year. The earlier company name is Alpha Stats, Inc.
+
+## Services
+
+- [Biostatistics](https://clinpharmstats.com/services/): Statistical analysis for early phase clinical trials.
+  - Phase 1 trial design and analysis
+  - Sample size and power calculations
+  - Dose escalation methodologies
+  - Safety data analysis
+  - Interim analyses for early decisions
+  - DSMB and IDMC support
+- [Statistical Programming](https://clinpharmstats.com/services/): Programming in SAS, R and Python for clinical trial data.
+  - Validated SAS/R/Python environments
+  - CDISC SDTM and ADaM datasets
+  - Custom analysis workflows
+  - PK/PD data processing
+  - Safety data automation
+  - Reproducible reporting
+- [Early Drug Development](https://clinpharmstats.com/services/): Support for early phase drug development.
+  - First-in-human study design
+  - Dose escalation strategies
+  - PK/PD modeling support
+  - Safety analysis expertise
+  - Regulatory submission support
+  - IND submission assistance
+
+## How the work runs
+
+- Staff work in functional roles on client projects, on site or by remote access to client systems.
+- Staff also work as independent statisticians and independent programmers for un-blinded analysis.
+
+## Pages
+
+- [About Us](https://clinpharmstats.com/about/): ClinPharmStats is a New Jersey corporation that provides biostatistics and clinical research services. This page describes the company and its team.
+- [Services](https://clinpharmstats.com/services/): ClinPharmStats supports Phase 1 clinical trials and early drug development. The services are biostatistics, statistical programming and early drug development support.
+- [Scholarship](https://clinpharmstats.com/scholarship/): This page lists publications by Shaun Porwal and Vijay Chauhan. The topics are biostatistics and clinical research.
+- [Open Source](https://clinpharmstats.com/open-source/): ClinPharmStats makes open source tools for clinical research. BioEq is a Python package for bioequivalence analysis.
+- [Careers](https://clinpharmstats.com/careers/): The careers page of ClinPharmStats lists open positions. No positions are open at this time.
+- [Contact](https://clinpharmstats.com/contact/): The office of ClinPharmStats is in Piscataway, New Jersey. This page gives the business contact for service inquiries.
+
+## Open source
+
+- [BioEq](https://github.com/juntotechnologies/bioeq): A Python package for bioequivalence analysis. It supports crossover, parallel and replicate designs. The license is MIT.
+
+## Contact
+
+- [Contact page](https://clinpharmstats.com/contact/)
+- Office: 21 Demarest Pl, Piscataway, NJ 08854, US
+- [Agent rules](https://clinpharmstats.com/agents.txt): What an automated agent may and may not do.
