@@ -9,10 +9,19 @@ const MAIN_ONLY = /github\.ref == 'refs\/heads\/main'/
 const NOT_PULL_REQUEST = /github\.event_name != 'pull_request'/
 
 const workflow = parse(readFileSync(new URL("../.github/workflows/github-pages-deploy.yml", import.meta.url), "utf8"))
-const jobs = Object.entries(workflow.jobs).map(([name, job]) => ({ name, ...job }))
+
+function named([name, job]) {
+  return { name, ...job }
+}
+
+const jobs = Object.entries(workflow.jobs).map(named)
+
+function isDeployStep(step) {
+  return String(step.uses ?? "").startsWith(DEPLOY_ACTION)
+}
 
 function usesDeployAction(job) {
-  return job.steps.some((step) => String(step.uses ?? "").startsWith(DEPLOY_ACTION))
+  return job.steps.some(isDeployStep)
 }
 
 function canWrite(job) {
