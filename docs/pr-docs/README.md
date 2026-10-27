@@ -2,9 +2,7 @@
 
 ## Active
 
-| Doc | Description |
-| --- | --- |
-| [PR 3](3-seo-agent-files.md) | Search and agent files |
+_No active PRs._
 
 ## Archive
 
@@ -12,3 +10,4 @@
 | --- | --- |
 | [PR 1](archive/1-contact-form-spam.md) | Reduce contact form spam |
 | [PR 2](archive/2-remove-contact-form.md) | Remove the public contact form |
+| [PR 3](archive/3-seo-agent-files.md) | Search and agent files |

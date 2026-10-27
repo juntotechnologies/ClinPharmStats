@@ -1,6 +1,6 @@
 # PR 3: Search and agent files
 
-Status: open
+Status: done
 Branch: `feature/seo-agent-files`
 
 ## Goal
