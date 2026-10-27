@@ -1,7 +1,9 @@
 name: Update Publications
 
-# Each day: write app/scholarship/page.tsx from Google Scholar and PubMed.
+# Each day: update the citation counts in app/scholarship/page.tsx from PubMed.
 # Commit a change to the branch that ran, then start the deploy workflow for that branch.
+# Google Scholar blocks GitHub runners ("Cannot Fetch from Google Scholar"), so the Scholar
+# script does not run here. Run `.github/scripts/update_publications.py` on a local machine.
 # A push with the default token starts no workflow, so the explicit start is needed.
 on:
   schedule:
@@ -30,10 +32,7 @@ jobs:
       - name: Compile the scripts
         run: python -m py_compile .github/scripts/update_publications.py .github/scripts/update_vijay_citations.py
 
-      - name: Update the publications from Google Scholar
-        run: python .github/scripts/update_publications.py
-
-      - name: Update Vijay Chauhan's citations from PubMed
+      - name: Update the citation counts from PubMed
         run: python .github/scripts/update_vijay_citations.py
 
       - name: Commit and push a change, then start the deploy
