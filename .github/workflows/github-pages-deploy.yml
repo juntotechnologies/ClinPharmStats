@@ -1,23 +1,23 @@
 name: Deploy to GitHub Pages
 
+# A pull request runs the checks only. Only a push to main, or a by-hand run on main, deploys.
 on:
   push:
     branches:
-      - main  # Set a branch name to trigger deployment
+      - main
   pull_request:
+  workflow_dispatch:
 
 jobs:
-  deploy:
+  verify:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+      contents: read
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '23'
           cache: 'npm'
@@ -35,6 +35,32 @@ jobs:
         env:
           GITHUB_PAGES: 'true'
 
+      - name: Keep the built site
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: out
+          include-hidden-files: true  # out/.well-known holds the agent rules
+          retention-days: 1
+
+  deploy:
+    needs: verify
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: deploy-github-pages
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch the built site
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: out
+
       - name: Configure for GitHub Pages
         run: |
           touch out/.nojekyll
@@ -44,4 +70,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out # The folder the action should deploy
-          clean: true # Automatically remove deleted files from the deployment 
+          clean: true # Automatically remove deleted files from the deployment
