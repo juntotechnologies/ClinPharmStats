@@ -1,0 +1,14 @@
+{
+  "maxFunctionLines": 15,
+  "maxComplexity": 5,
+  "maxDepth": 1,
+  "maxParams": 4,
+  "files": [
+    "lib/seo/**/*.{mjs,ts}",
+    "scripts/**/*.mjs",
+    "tests/**/*.mjs",
+    "components/json-ld.tsx",
+    "app/*/layout.tsx",
+    "eslint.config.mjs"
+  ]
+}

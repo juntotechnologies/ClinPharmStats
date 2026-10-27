@@ -1,0 +1,173 @@
+{
+  "name": "ClinPharmStats",
+  "alternateName": "Alpha Stats, Inc",
+  "url": "https://clinpharmstats.com/",
+  "language": "en",
+  "locale": "en_US",
+  "author": "Shaun Porwal",
+  "foundingYear": "1999",
+  "tagline": "Biostatistics & Clinical Research Services",
+  "summary": "ClinPharmStats provides biostatistics and statistical programming services to pharmaceutical and biotechnology companies. The services support clinical trials.",
+  "profile": [
+    "ClinPharmStats is a New Jersey corporation.",
+    "The About page gives 1999 as the start year."
+  ],
+  "keywords": [
+    "biostatistics",
+    "clinical research",
+    "statistical programming",
+    "R programming",
+    "Python programming",
+    "SAS programming",
+    "clinical trials",
+    "pharmaceutical statistics",
+    "CDISC",
+    "clinical data analysis",
+    "biotech statistics"
+  ],
+  "brand": {
+    "mark": "CPS",
+    "gradientStart": "#2D77E5",
+    "gradientEnd": "#074DAD",
+    "logoPath": "/logo.svg",
+    "faviconPath": "/favicon.svg",
+    "touchIconPath": "/apple-touch-icon.png",
+    "touchIconSize": 180
+  },
+  "address": {
+    "street": "21 Demarest Pl",
+    "city": "Piscataway",
+    "region": "NJ",
+    "postalCode": "08854",
+    "country": "US"
+  },
+  "services": [
+    {
+      "name": "Biostatistics",
+      "summary": "Statistical analysis for early phase clinical trials.",
+      "items": [
+        "Phase 1 trial design and analysis",
+        "Sample size and power calculations",
+        "Dose escalation methodologies",
+        "Safety data analysis",
+        "Interim analyses for early decisions",
+        "DSMB and IDMC support"
+      ]
+    },
+    {
+      "name": "Statistical Programming",
+      "summary": "Programming in SAS, R and Python for clinical trial data.",
+      "items": [
+        "Validated SAS/R/Python environments",
+        "CDISC SDTM and ADaM datasets",
+        "Custom analysis workflows",
+        "PK/PD data processing",
+        "Safety data automation",
+        "Reproducible reporting"
+      ]
+    },
+    {
+      "name": "Early Drug Development",
+      "summary": "Support for early phase drug development.",
+      "items": [
+        "First-in-human study design",
+        "Dose escalation strategies",
+        "PK/PD modeling support",
+        "Safety analysis expertise",
+        "Regulatory submission support",
+        "IND submission assistance"
+      ]
+    }
+  ],
+  "engagement": [
+    "Staff work in functional roles on client projects, on site or by remote access to client systems.",
+    "Staff also work as independent statisticians and independent programmers for un-blinded analysis."
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "name": "Home",
+      "title": "ClinPharmStats - Biostatistics & Clinical Research Services",
+      "description": "ClinPharmStats provides biostatistics and statistical programming services for clinical trials. Clients are pharmaceutical and biotechnology companies.",
+      "source": "app/page.tsx"
+    },
+    {
+      "path": "/about/",
+      "name": "About Us",
+      "title": "About Us | ClinPharmStats",
+      "description": "ClinPharmStats is a New Jersey corporation that provides biostatistics and clinical research services. This page describes the company and its team.",
+      "source": "app/about/page.tsx"
+    },
+    {
+      "path": "/services/",
+      "name": "Services",
+      "title": "Biostatistics and Programming Services | ClinPharmStats",
+      "description": "ClinPharmStats supports Phase 1 clinical trials and early drug development. The services are biostatistics, statistical programming and early drug development support.",
+      "source": "app/services/page.tsx"
+    },
+    {
+      "path": "/scholarship/",
+      "name": "Scholarship",
+      "title": "Scholarship | ClinPharmStats",
+      "description": "This page lists publications by Shaun Porwal and Vijay Chauhan. The topics are biostatistics and clinical research.",
+      "source": "app/scholarship/page.tsx"
+    },
+    {
+      "path": "/open-source/",
+      "name": "Open Source",
+      "title": "Open Source | ClinPharmStats",
+      "description": "ClinPharmStats makes open source tools for clinical research. BioEq is a Python package for bioequivalence analysis.",
+      "source": "app/open-source/page.tsx"
+    },
+    {
+      "path": "/careers/",
+      "name": "Careers",
+      "title": "Careers | ClinPharmStats",
+      "description": "The careers page of ClinPharmStats lists open positions. No positions are open at this time.",
+      "source": "app/careers/page.tsx"
+    },
+    {
+      "path": "/contact/",
+      "name": "Contact",
+      "title": "Contact | ClinPharmStats",
+      "description": "The office of ClinPharmStats is in Piscataway, New Jersey. This page gives the business contact for service inquiries.",
+      "source": "app/contact/page.tsx"
+    }
+  ],
+  "openSource": [
+    {
+      "name": "BioEq",
+      "url": "https://github.com/juntotechnologies/bioeq",
+      "summary": "A Python package for bioequivalence analysis. It supports crossover, parallel and replicate designs. The license is MIT."
+    }
+  ],
+  "crawlers": [
+    "*",
+    "GPTBot",
+    "ClaudeBot",
+    "PerplexityBot",
+    "Google-Extended",
+    "CCBot"
+  ],
+  "agents": {
+    "summary": "This site is the public website of ClinPharmStats. It has no login and no form.",
+    "may": [
+      "Read each public page.",
+      "Follow each link on a page."
+    ],
+    "mayNot": [
+      "Post a form.",
+      "Send a message for a person.",
+      "Book a call for a person.",
+      "Send a resume or a job inquiry for a person."
+    ],
+    "contactPath": "/contact/"
+  },
+  "og": {
+    "path": "/og.png",
+    "width": 1200,
+    "height": 630,
+    "card": "summary_large_image",
+    "type": "website"
+  }
+}

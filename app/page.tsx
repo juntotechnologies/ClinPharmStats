@@ -1,12 +1,17 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import JsonLd from "@/components/json-ld"
+import { homeJsonLd, pageMetadata } from "@/lib/seo/next"
 import { Award, BarChart2, CheckCircle, ChevronRight, FileText, TrendingUp, Users, Zap } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
+export const metadata = pageMetadata("/")
+
 export default function Home() {
   return (
     <div>
+      <JsonLd data={homeJsonLd()} />
       {/* Hero Section */}
       <section className="relative overflow-hidden py-14 bg-gradient-blue text-white">
         <div className="absolute inset-0 bg-dots-pattern opacity-10"></div>
@@ -43,7 +48,7 @@ export default function Home() {
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/90 to-primary/60 text-white p-4 rounded-b-lg backdrop-blur-sm">
                     <div className="text-center">
-                      <h3 className="text-xl font-bold">Cookie</h3>
+                      <p className="text-xl font-bold">Cookie</p>
                       <p className="text-sm opacity-90">Chief Happiness Officer (CHO)</p>
                     </div>
                   </div>

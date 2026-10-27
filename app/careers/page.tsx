@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { pageMetadata } from "@/lib/seo/next"
 import Link from "next/link"
+
+export const metadata = pageMetadata("/careers/")
 
 export default function CareersPage() {
   return (

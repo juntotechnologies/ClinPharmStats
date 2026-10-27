@@ -1,4 +1,7 @@
+import { pageMetadata } from "@/lib/seo/next"
 import { Mail, MapPin } from "lucide-react"
+
+export const metadata = pageMetadata("/contact/")
 
 const contactEmail = "shaun.porwal@gmail.com"
 

@@ -1,3 +1,4 @@
+/** Tests that the contact page has no form and keeps the direct business contact. */
 import assert from "node:assert/strict"
 import { readFileSync } from "node:fs"
 import test from "node:test"
