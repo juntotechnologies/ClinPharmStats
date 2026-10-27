@@ -1,6 +1,6 @@
 # PR 4: Deploy only from main, clean lint, clear audit
 
-Status: in review
+Status: done
 Branch: `chore/ci-lint-deps-cleanup`
 
 ## Goal
@@ -41,8 +41,8 @@ Other in-range packages (`postcss`, `source-map-js`, `postcss-selector-parser`) 
 - [x] Built HTML is the same as before after asset hashes are removed. The CSS drops five utility classes that only `server.js` text produced.
 - [x] 64 screenshots (8 pages, 4 widths, light and dark) are pixel-identical to the build before this change.
 - [x] `scripts/serve-out.mjs` answers 19 URLs the same as the old `server.js`.
-- [ ] The PR run does not start a `deploy` job.
-- [ ] After the merge, the deploy runs, the live site returns 200 and `/.well-known/agents.json` still answers.
+- [x] The PR run did not start a `deploy` job. Run 40536864923: `verify` passed, `deploy` skipped.
+- [x] After the merge, run 40537087142 deployed. All pages return 200, `/.well-known/agents.json` answers, `/debug/` returns 404, and 28 live views show no failed request.
 
 ## Not in this PR
 
