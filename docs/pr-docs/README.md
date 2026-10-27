@@ -2,7 +2,9 @@
 
 ## Active
 
-_No active PRs._
+| Doc | Description |
+| --- | --- |
+| [PR 4](4-ci-lint-deps-cleanup.md) | Deploy only from main, clean lint, clear audit |
 
 ## Archive
 
