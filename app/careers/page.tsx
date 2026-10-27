@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { pageMetadata } from "@/lib/seo/next"
-import Link from "next/link"
 
 export const metadata = pageMetadata("/careers/")
 
@@ -53,7 +51,7 @@ export default function CareersPage() {
               </CardHeader>
               <CardContent>
                 <p>
-                  We value our employees' wellbeing and offer flexible work arrangements to help maintain a healthy
+                  We value our employees&apos; wellbeing and offer flexible work arrangements to help maintain a healthy
                   work-life balance.
                 </p>
               </CardContent>

@@ -292,7 +292,7 @@ export default function AboutPage() {
                         <div className="flex flex-col md:flex-row md:gap-4">
                           <div className="font-semibold text-primary whitespace-nowrap">2021</div>
                           <div>
-                            <p className="font-medium">Master's in Biomedical Data Science (MS)</p>
+                            <p className="font-medium">Master&apos;s in Biomedical Data Science (MS)</p>
                             <p className="text-muted-foreground">Icahn School of Medicine at Mount Sinai</p>
                           </div>
                         </div>
@@ -300,7 +300,7 @@ export default function AboutPage() {
                         <div className="flex flex-col md:flex-row md:gap-4">
                           <div className="font-semibold text-primary whitespace-nowrap">2019</div>
                           <div>
-                            <p className="font-medium">Bachelor's in Biomedical Engineering, Chinese (BE)</p>
+                            <p className="font-medium">Bachelor&apos;s in Biomedical Engineering, Chinese (BE)</p>
                             <p className="text-muted-foreground">Rutgers University - New Brunswick</p>
                           </div>
                         </div>
@@ -376,7 +376,7 @@ export default function AboutPage() {
                         <div className="flex flex-col md:flex-row md:gap-4">
                           <div className="font-semibold text-primary whitespace-nowrap">2008</div>
                           <div>
-                            <p className="font-medium">Master's in Project Management (MPM)</p>
+                            <p className="font-medium">Master&apos;s in Project Management (MPM)</p>
                             <p className="text-muted-foreground">Keller Graduate School of Management</p>
                           </div>
                         </div>
@@ -384,7 +384,7 @@ export default function AboutPage() {
                         <div className="flex flex-col md:flex-row md:gap-4">
                           <div className="font-semibold text-primary whitespace-nowrap">2006</div>
                           <div>
-                            <p className="font-medium">Bachelor's in Business Administration (BBA)</p>
+                            <p className="font-medium">Bachelor&apos;s in Business Administration (BBA)</p>
                             <p className="text-muted-foreground">DeVry University</p>
                           </div>
                         </div>
@@ -469,7 +469,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-center">Mission & Vision</h3>
                 <p className="text-muted-foreground mb-6 text-center">
-                  Discover our company's mission, vision, and core values.
+                  Discover our company&apos;s mission, vision, and core values.
                 </p>
                 <Button variant="outline" className="w-full" onClick={handleExpandMissionCard}>
                   <span className="flex items-center justify-center">
@@ -602,7 +602,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-accent mt-2 mr-2"></div>
-                  <span>Non-Hodgkin's Lymphoma</span>
+                  <span>Non-Hodgkin&apos;s Lymphoma</span>
                 </div>
                 <div className="flex items-start">
                   <div className="w-2 h-2 rounded-full bg-accent mt-2 mr-2"></div>
@@ -759,7 +759,7 @@ export default function AboutPage() {
               </p>
 
               <p className="mb-6">
-                Our resources communicate directly with the client's team in an attempt to be treated as extended team member. ClinPharmStats always tries to accommodate within our clients budget.
+                Our resources communicate directly with the client&apos;s team in an attempt to be treated as extended team member. ClinPharmStats always tries to accommodate within our clients budget.
               </p>
 
               <div className="text-center mt-8">

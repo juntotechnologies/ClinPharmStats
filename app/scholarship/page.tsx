@@ -219,7 +219,7 @@ export default function ScholarshipPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="mb-12 text-center">
-              <h2 className="text-3xl font-bold mb-4">Shaun Porwal's Research Contributions</h2>
+              <h2 className="text-3xl font-bold mb-4">Shaun Porwal&apos;s Research Contributions</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 Peer-reviewed publications in medical journals and conference proceedings
               </p>
@@ -313,7 +313,7 @@ export default function ScholarshipPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="mb-12 text-center">
-              <h2 className="text-3xl font-bold mb-4">Vijay Chauhan's Research Contributions</h2>
+              <h2 className="text-3xl font-bold mb-4">Vijay Chauhan&apos;s Research Contributions</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 Peer-reviewed publications, conference papers, and research contributions
               </p>

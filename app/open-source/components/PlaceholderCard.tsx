@@ -11,7 +11,7 @@ export function PlaceholderCard() {
       </CardHeader>
       <CardContent className="flex-grow">
         <p className="text-sm text-muted-foreground">
-          We're actively developing more open source tools to support the clinical research community.
+          We&apos;re actively developing more open source tools to support the clinical research community.
         </p>
       </CardContent>
     </Card>
