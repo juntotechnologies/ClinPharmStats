@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Deployment
 
-This site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
+This site is automatically deployed to GitHub Pages when changes are pushed to the main branch. A pull request runs lint, tests and build only. It does not deploy.
 
 ### Manual Deployment
 
