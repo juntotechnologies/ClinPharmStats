@@ -41,6 +41,6 @@ jobs:
         run: |
           git add app/scholarship/page.tsx
           git diff --staged --quiet && echo "No change." && exit 0
-          git -c user.name='GitHub Actions Bot' -c user.email='actions@github.com' commit -m "Update: Publications from Google Scholar and PubMed"
+          git -c user.name='GitHub Actions Bot' -c user.email='actions@github.com' commit -m "Update: citation counts from PubMed"
           git push
           gh workflow run github-pages-deploy.yml --ref "$GITHUB_REF_NAME"
