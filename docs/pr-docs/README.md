@@ -2,7 +2,9 @@
 
 ## Active
 
-_No active PRs._
+| Doc | Description |
+| --- | --- |
+| [PR 5](5-publications-workflow.md) | Make the daily citation update run and stop it from damaging titles |
 
 ## Archive
 
