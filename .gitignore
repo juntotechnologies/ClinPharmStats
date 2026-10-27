@@ -28,3 +28,6 @@ next-env.d.ts
 .DS_Store
 docs/strategy/contact-tracker.md
 docs/strategy/icp-report.md
+
+# Python bytecode
+__pycache__/
