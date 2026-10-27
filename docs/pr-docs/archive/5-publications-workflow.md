@@ -1,6 +1,6 @@
 # PR 5: Make the daily citation update run
 
-Status: underway
+Status: done (merged on 2026-10-27, commit `bc5db1c`)
 Branch: `fix/update-publications-workflow`
 
 ## Goal
@@ -36,5 +36,5 @@ Every run used the branch, so no run changed `main`.
 
 ## Smoke Tests
 
-- [ ] After the merge, run the workflow on `main` by hand. It prints "No change." and passes.
-- [ ] Open `/scholarship` on the live site after the next deploy. Every title reads as before.
+- [x] After the merge, the agent ran the workflow on `main` by hand. It passed and printed "No change needed" for each publication.
+- [x] The agent opened `/scholarship` on the live site after the deploy. The title reads "17β-estradiol".

@@ -2,14 +2,13 @@
 
 ## Active
 
-| Doc | Description |
-| --- | --- |
-| [PR 5](5-publications-workflow.md) | Make the daily citation update run and stop it from damaging titles |
+_No active PRs._
 
 ## Archive
 
 | Doc | Description |
 | --- | --- |
+| [PR 5](archive/5-publications-workflow.md) | Make the daily citation update run and stop it from damaging titles |
 | [PR 1](archive/1-contact-form-spam.md) | Reduce contact form spam |
 | [PR 2](archive/2-remove-contact-form.md) | Remove the public contact form |
 | [PR 3](archive/3-seo-agent-files.md) | Search and agent files |
