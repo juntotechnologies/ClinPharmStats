@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
 """
 Script to update citation counts for Vijay Chauhan's publications from PubMed.
 This script searches for publications in PubMed and updates the citation counts

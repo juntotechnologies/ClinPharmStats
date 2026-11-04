@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run --script
 """
 Script to update publications from Google Scholar.
 This script fetches publications from a Google Scholar profile and updates the
