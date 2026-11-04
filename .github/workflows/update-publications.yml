@@ -21,19 +21,16 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Set up uv
+        uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6.8.0
         with:
           python-version: '3.12'
 
-      - name: Install the pinned dependencies
-        run: python -m pip install -r requirements.txt
-
       - name: Compile the scripts
-        run: python -m py_compile .github/scripts/update_publications.py .github/scripts/update_vijay_citations.py
+        run: uv run --quiet --no-project python -m py_compile .github/scripts/update_publications.py .github/scripts/update_vijay_citations.py
 
-      - name: Update the citation counts from PubMed
-        run: python .github/scripts/update_vijay_citations.py
+      - name: Update the citation counts from PubMed (pinned dependencies)
+        run: uv run --quiet --no-project --with-requirements requirements.txt python .github/scripts/update_vijay_citations.py
 
       - name: Commit and push a change, then start the deploy
         env:
