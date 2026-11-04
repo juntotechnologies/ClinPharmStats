@@ -2,7 +2,9 @@
 
 ## Active
 
-_No active PRs._
+| Doc | Description |
+| --- | --- |
+| [uv-only backlog](planned-uv-only-backlog.md) | Start the citation workflow Python only through uv |
 
 ## Archive
 
