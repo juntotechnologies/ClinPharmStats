@@ -3,4 +3,4 @@
 :HL["/_next/static/chunks/1gwgtmazf49v5.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"scholarship","h":96,"c":"$Q2"}]]
-0:{"b":"USXFeP4Zl_XPz_-6TSI-D","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"UCYxt_gCTpWWu4dzkv51p","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
