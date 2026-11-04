@@ -16,9 +16,9 @@ The `uv-only` rule lints changed lines only. A full scan (`ops check --all --lin
 
 ### Tier 1 - Workflow
 
-- [ ] Replace `actions/setup-python` with `astral-sh/setup-uv` (same pin as swarm-infra, Python 3.12).
-- [ ] Drop the `pip install` step. `uv run --with-requirements requirements.txt` installs the same pinned set.
-- [ ] `py_compile` and the PubMed script run through `uv run --no-project`.
+- [x] Replace `actions/setup-python` with `astral-sh/setup-uv` (same pin as swarm-infra, Python 3.12).
+- [x] Drop the `pip install` step. `uv run --with-requirements requirements.txt` installs the same pinned set.
+- [x] `py_compile` and the PubMed script run through `uv run --no-project`.
 
 ## Smoke Tests
 
@@ -38,7 +38,11 @@ Not applicable: no UI, no site change. Covered by:
 
 ## Scope
 
-- 4 of 4 `uv-only` hits.
+- 4 of 4 `uv-only` hits, all in `.github/workflows/update-publications.yml`. After: `ops check --all --lint-only` reports 0.
+- Proved:
+  - Converted commands run locally under uv with the pinned set. The PubMed run reports "No change needed" for both found records and leaves the tree clean.
+  - `workflow_dispatch` on this branch: run 41754416997 passed (28 s), no bot commit, no deploy.
+  - `npm run lint` clean. `npm test` 29 of 29.
 
 ## Non-Goals
 
