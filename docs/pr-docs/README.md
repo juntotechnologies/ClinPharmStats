@@ -4,7 +4,7 @@
 
 | Doc | Description |
 | --- | --- |
-| [uv-only backlog](planned-uv-only-backlog.md) | Start the citation workflow Python only through uv |
+| [PR 7: uv-only backlog](./7-uv-only-backlog.md) | Start the citation workflow Python only through uv |
 
 ## Archive
 
