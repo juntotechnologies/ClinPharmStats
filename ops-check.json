@@ -1,0 +1,7 @@
+{
+  "exempt": {
+    "uv-only": [
+      "tests/uv-python.test.mjs"
+    ]
+  }
+}
