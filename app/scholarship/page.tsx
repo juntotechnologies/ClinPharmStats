@@ -77,7 +77,7 @@ export default function ScholarshipPage() {
       authors: "de Jong, J., Hellemans, P., De Wilde, S., Patriciac, D., Masterson, T., Manikhas, G., Myasnikove, A., Osmanov, D., Córdoba, R., Panizo, C., de Zwart, L., Snoeys, J., Chauhan, V., Jiao, J., Sukbuntherng, J., & Ouellet, D.",
       journal: "Journal Leukemia & Lymphoma",
       year: 2018,
-      citations: 20,
+      citations: 21,
       url: "https://doi.org/10.1080/10428194.2018.1460474"
     },
     {
